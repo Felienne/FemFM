@@ -60,6 +60,16 @@ def genereer_uitvoer(kanaal):
         volgende_kanaal = kanaal
     return tekst, volgende_kanaal, wachttijd
 
+def player(kanaal):
+    if kanaal == '2':
+        return 'https://radioplayer.nporadio.nl/mini-player/radio2/'
+    elif kanaal == '3':
+        return 'https://radioplayer.nporadio.nl/mini-player/3fm/'
+    elif kanaal == '4':
+        return 'https://radioplayer.nporadio.nl/mini-player/radio4/'
+    elif kanaal == '5':
+        return 'https://radioplayer.nporadio.nl/mini-player/radio5/'
+    
 # app.py
 from flask import Flask, request, jsonify
 app = Flask(__name__)
@@ -76,7 +86,8 @@ def nu_op(kanaal):
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,
-                    wachttijd=wachttijd)
+                    wachttijd=wachttijd,
+                    iframe=player(kanaal))
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support

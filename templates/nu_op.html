@@ -6,6 +6,19 @@
     <title>Nu op de radio...</title>
 </head>
 <body>
+<script>
+    function triggerClickInsideIframe() {
+        document.getElementById("iframe").contentWindow.document.getElementsByClassName("PlayControl clickitem")[0].click();
+    }
+</script>
+
 <h3>{{tekst}}</h3>
+<iframe
+        width="300px"
+        height="160px"
+        src="{{iframe}}"
+        allow="autoplay"
+        id="iframe"
+        title="Muziekje erbij?"></iframe>
 </body>
 </html>
