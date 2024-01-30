@@ -1,11 +1,14 @@
-from datetime import datetime
-
+from datetime import datetime, timedelta
 import requests
 import json
 from flask import redirect, url_for, render_template, session
 
 with open("women.txt", 'r') as w:
     vrouwen = w.read().splitlines()
+
+import os
+
+lokaal = os.getenv('LOCAL_HOST')
 
 
 def alle_liedjes_van_radio(kanaal):
@@ -19,6 +22,12 @@ def alle_liedjes_van_radio(kanaal):
     r = requests.get(url, verify=False, headers=header)
     for liedje in json.loads(r.content)["data"]:
         print(liedje["artist"], "-", liedje["title"])
+
+def nu():
+    if lokaal: #fetch env var
+        datetime.now()
+    else:
+        return datetime.now() + timedelta(hours=1)
 
 def huidig_liedje_op_radio(kanaal):
     if int(kanaal) == 3:
@@ -34,7 +43,7 @@ def huidig_liedje_op_radio(kanaal):
     eindtijd = liedje["enddatetime"]
 
     datetime_object = datetime.strptime(eindtijd, '%Y-%m-%dT%H:%M:%S')
-    if datetime_object < datetime.now():
+    if datetime_object < nu():
         return None
 
     return liedje["artist"], liedje["title"], datetime_object
@@ -75,7 +84,7 @@ def genereer_uitvoer(kanaal):
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
             volgende_kanaal = kanaal
     else:
-        tekst = f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op {kanaal}. Even wachten nog...!"
+        tekst = f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}. Even wachten nog...!"
         wachttijd = "30"
         volgende_kanaal = kanaal
 
