@@ -14,7 +14,9 @@ def alle_liedjes_van_radio(kanaal):
     else:
         url = f'http://www.nporadio{kanaal}.nl/api/tracks'
 
-    r = requests.get(url, verify=False)
+    header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+
+    r = requests.get(url, verify=False, headers=header)
     for liedje in json.loads(r.content)["data"]:
         print(liedje["artist"], "-", liedje["title"])
 
@@ -24,7 +26,9 @@ def huidig_liedje_op_radio(kanaal):
     else:
         url = f'http://www.nporadio{kanaal}.nl/api/tracks'
 
-    r = requests.get(url, verify=False)
+    header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+
+    r = requests.get(url, verify=False, headers=header)
     liedje = json.loads(r.content)["data"][0]
 
     eindtijd = liedje["enddatetime"]
@@ -36,6 +40,8 @@ def huidig_liedje_op_radio(kanaal):
     return liedje["artist"], liedje["title"], datetime_object
 
 def zap(kanaal):
+    if kanaal == '1':
+        return '2'
     if kanaal == '2':
         return '3'
     if kanaal == '3':
@@ -43,7 +49,7 @@ def zap(kanaal):
     if kanaal == '4':
         return '5'
     if kanaal == '5':
-        return '2'
+        return '1'
 
     raise Exception("Onbekend station!!")
 
@@ -63,12 +69,13 @@ def genereer_uitvoer(kanaal):
             wachttijd = "5"
             stats['Totaal aantal zaps'] += 1
         else:
-            tekst = f"Er speelt een vrouw op Radio {kanaal}! Namelijk {artiest} met {titel}. Dit liedje speelt nog tot {eindtijd.strftime('%H:%M:%S')}."
+            tekst = f"Er speelt een vrouw op Radio {kanaal}! Namelijk {artiest} met {titel}. " \
+                    f"Dit liedje speelt nog tot {eindtijd.strftime('%H:%M:%S')} en het is nu {datetime.now().strftime('%H:%M:%S')}."
             duur = (eindtijd - datetime.now()).total_seconds()
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
             volgende_kanaal = kanaal
     else:
-        tekst = f"Er speelt nu geen liedje op {kanaal}. Even wachten nog...!"
+        tekst = f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op {kanaal}. Even wachten nog...!"
         wachttijd = "30"
         volgende_kanaal = kanaal
 
@@ -77,7 +84,9 @@ def genereer_uitvoer(kanaal):
     return tekst, volgende_kanaal, wachttijd, stats
 
 def player(kanaal):
-    if kanaal == '2':
+    if kanaal == '1':
+        return 'https://radioplayer.nporadio.nl/mini-player/radio1/'
+    elif kanaal == '2':
         return 'https://radioplayer.nporadio.nl/mini-player/radio2/'
     elif kanaal == '3':
         return 'https://radioplayer.nporadio.nl/mini-player/3fm/'
