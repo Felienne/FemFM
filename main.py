@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+import time
 import requests
 import json
 from flask import redirect, url_for, render_template, session
@@ -9,7 +10,6 @@ with open("women.txt", 'r') as w:
 import os
 
 lokaal = os.getenv('LOCAL_HOST')
-
 
 def alle_liedjes_van_radio(kanaal):
     if kanaal == 3:
@@ -25,7 +25,7 @@ def alle_liedjes_van_radio(kanaal):
 
 def nu():
     if lokaal: #fetch env var
-        datetime.now()
+        return datetime.now()
     else:
         return datetime.now() + timedelta(hours=1)
 
@@ -39,28 +39,40 @@ def huidig_liedje_op_radio(kanaal):
 
     r = requests.get(url, verify=False, headers=header)
     liedje = json.loads(r.content)["data"][0]
-
+    starttijd = liedje["startdatetime"]
     eindtijd = liedje["enddatetime"]
 
-    datetime_object = datetime.strptime(eindtijd, '%Y-%m-%dT%H:%M:%S')
-    if datetime_object < nu():
+    eindtijd_object = datetime.strptime(eindtijd, '%Y-%m-%dT%H:%M:%S')
+    if eindtijd_object < nu():
         return None
 
-    return liedje["artist"], liedje["title"], datetime_object
+    return liedje["artist"], liedje["title"], starttijd, eindtijd, eindtijd_object
 
-def zap(kanaal):
-    if kanaal == '1':
-        return '2'
-    if kanaal == '2':
-        return '3'
-    if kanaal == '3':
-        return '4'
-    if kanaal == '4':
-        return '5'
-    if kanaal == '5':
-        return '1'
-
-    raise Exception("Onbekend station!!")
+def zap(kanaal, publiek=True):
+    if publiek:
+        if kanaal == '1':
+            return '2'
+        if kanaal == '2':
+            return '3'
+        if kanaal == '3':
+            return '4'
+        if kanaal == '4':
+            return '5'
+        if kanaal == '5':
+            return '1'
+        raise Exception("Onbekend station!!")
+    else:
+        if kanaal == '1':
+            return 'Q'
+        if kanaal == 'Q':
+            return '2'
+        if kanaal == '2':
+            return '10'
+        if kanaal == '10':
+            return '538'
+        if kanaal == '538':
+            return '1'
+        raise Exception("Onbekend station!!")
 
 
 def is_vrouw(artiest):
@@ -70,7 +82,7 @@ def genereer_uitvoer(kanaal):
     stats = session.get('stats')
 
     if x := huidig_liedje_op_radio(kanaal):
-        artiest, titel, eindtijd = x
+        artiest, titel, starttijd, eindtijd, eindtijd_object = x
 
         if not is_vrouw(artiest):
             volgende_kanaal = zap(kanaal)
@@ -79,8 +91,8 @@ def genereer_uitvoer(kanaal):
             stats['Totaal aantal zaps'] += 1
         else:
             tekst = f"Er speelt een vrouw op Radio {kanaal}! Namelijk {artiest} met {titel}. " \
-                    f"Dit liedje speelt nog tot {eindtijd.strftime('%H:%M:%S')} en het is nu {datetime.now().strftime('%H:%M:%S')}."
-            duur = (eindtijd - datetime.now()).total_seconds()
+                    f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M:%S')} en het is nu {datetime.now().strftime('%H:%M:%S')}."
+            duur = (eindtijd_object - datetime.now()).total_seconds()
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
             volgende_kanaal = kanaal
     else:
@@ -109,6 +121,40 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'GEHEIM!!!!'
 
+import csv
+
+
+
+@app.route('/logging')
+def log():
+    with open('liedjes_logs.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["Artiest", "Titel", "Starttijd", "Eindtijd", "Vrouw?", "Kanaal"])
+
+    kanaal = '1'
+    initiele_waarde = ('', datetime.now())
+    laatste_liedje_op_kanaal = {'1': initiele_waarde, '2': initiele_waarde, '3': initiele_waarde, '4':initiele_waarde, '5':initiele_waarde}
+    while True:
+        laatste_liedje, eindtijd = laatste_liedje_op_kanaal[kanaal]
+        if datetime.now() > eindtijd: # het vorige liedje is nu afgelopen!
+
+            if x := huidig_liedje_op_radio(kanaal):
+                artiest, titel, starttijd, eindtijd, eindtijd_object = x
+                vrouw = is_vrouw(artiest)
+                if not laatste_liedje == titel:
+                    with open('liedjes_logs.csv', 'a', newline='') as file:
+                        writer = csv.writer(file)
+                        writer.writerow([artiest, titel, starttijd, eindtijd, vrouw, kanaal])
+
+                    print(artiest, titel, starttijd, eindtijd, vrouw, kanaal)
+                    laatste_liedje_op_kanaal[kanaal] = titel, eindtijd_object
+            else:
+                print(f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}")
+                time.sleep(30)
+        else:
+            print(f"Het liedje {laatste_liedje} op Radio {kanaal} is al gelogd!")
+            time.sleep(30)
+        kanaal = zap(kanaal)
 
 # A welcome message to test our server
 @app.route('/')
@@ -119,9 +165,8 @@ def index():
         'Aantal mannen gehoord': 0,
         'Totaal aantal zaps': 0
     }
-    return redirect(url_for("nu_op", kanaal=2))
+    return redirect(url_for("nu_op", kanaal=1))
 
-# A welcome message to test our server
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
     tekst, volgende_kanaal, wachttijd, stats = genereer_uitvoer(kanaal)
