@@ -30,24 +30,43 @@ def nu():
         return datetime.now() + timedelta(hours=1)
 
 def huidig_liedje_op_radio(kanaal):
-    if int(kanaal) == 3:
+    if kanaal == '3':
         url = 'https://www.npo3fm.nl/api/tracks'
+    elif kanaal == '538':
+        url = "https://graph.talparad.io/?query=%7B%0A%20%20station(slug%3A%20%22radio-538%22)%20%7B%0A%20%20%20%20title%0A%20%20%20%20playouts(profile%3A%20%22%22%2C%20limit%3A%2010)%20%7B%0A%20%20%20%20%20%20broadcastDate%0A%20%20%20%20%20%20track%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20artistName%0A%20%20%20%20%20%20%20%20isrc%0A%20%20%20%20%20%20%20%20images%20%7B%0A%20%20%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%20%20%20%20uri%0A%20%20%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rankings%20%7B%0A%20%20%20%20%20%20%20%20listName%0A%20%20%20%20%20%20%20%20position%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20__typename%0A%20%20%20%20%7D%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D&variables=%7B%7D"
     else:
         url = f'http://www.nporadio{kanaal}.nl/api/tracks'
 
-    header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              'x-api-key': 'da2-abza7qpnqbfe5ihpk4jhcslpgy'}
+
+    publiek = ['1', '2', '3', '4', '5']
 
     r = requests.get(url, verify=False, headers=header)
-    liedje = json.loads(r.content)["data"][0]
-    starttijd = liedje["startdatetime"]
-    eindtijd = liedje["enddatetime"]
 
-    eindtijd_object = datetime.strptime(eindtijd, '%Y-%m-%dT%H:%M:%S')
-    if eindtijd_object < nu():
-        return None
+    if kanaal in publiek:
+        liedje = json.loads(r.content)["data"][0]
+        starttijd = liedje["startdatetime"]
+        eindtijd = liedje["enddatetime"]
 
-    return liedje["artist"], liedje["title"], starttijd, eindtijd, eindtijd_object
+        eindtijd_object = datetime.strptime(eindtijd, '%Y-%m-%dT%H:%M:%S')
+        if eindtijd_object < nu():
+            return None
 
+        return liedje["artist"], liedje["title"], starttijd, eindtijd, eindtijd_object
+    else: #helaas pindakaas, niet allemaal dezelde data!
+        data = json.loads(r.content)["data"]
+        liedje = data['station']['playouts'][0]
+        starttijd = liedje["broadcastDate"]
+        artiest = liedje['track']['artistName']
+        titel = liedje['track']['title']
+
+        #eindtijd wordt niet gegeven dus doe maar 3 mins erop, en ze lopen een uur achter zoals op de server (dit werkt dus waarschijnlijk online zo niet)
+        eindtijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%SZ') + timedelta(minutes=3) + timedelta(hours=1)
+        if eindtijd_object < nu():
+            return None
+
+        return artiest, titel, starttijd, str(eindtijd_object), eindtijd_object
 def zap(kanaal, publiek=True):
     if publiek:
         if kanaal == '1':
@@ -80,12 +99,13 @@ def is_vrouw(artiest):
 
 def genereer_uitvoer(kanaal):
     stats = session.get('stats')
+    publiek = False
 
     if x := huidig_liedje_op_radio(kanaal):
         artiest, titel, starttijd, eindtijd, eindtijd_object = x
 
         if not is_vrouw(artiest):
-            volgende_kanaal = zap(kanaal)
+            volgende_kanaal = zap(kanaal, publiek)
             tekst = f"Er speelt GEEN vrouw op Radio {kanaal}, maar {artiest}. Zappen maar!"
             wachttijd = "5"
             stats['Totaal aantal zaps'] += 1
@@ -115,6 +135,8 @@ def player(kanaal):
         return 'https://radioplayer.nporadio.nl/mini-player/radio4/'
     elif kanaal == '5':
         return 'https://radioplayer.nporadio.nl/mini-player/radio5/'
+    elif kanaal == '538':
+        return 'https://partnerplayer.juke.nl/radio-538-player/stations/stations-radio-538/radio-538?autoplay=true'
 
 # app.py
 from flask import Flask, request, jsonify
@@ -146,14 +168,14 @@ def log():
                         writer = csv.writer(file)
                         writer.writerow([artiest, titel, starttijd, eindtijd, vrouw, kanaal])
 
-                    print(artiest, titel, starttijd, eindtijd, vrouw, kanaal)
+                    print("Logging ", artiest, titel, starttijd, eindtijd, vrouw, kanaal)
                     laatste_liedje_op_kanaal[kanaal] = titel, eindtijd_object
             else:
                 print(f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}")
-                time.sleep(30)
+                time.sleep(10)
         else:
             print(f"Het liedje {laatste_liedje} op Radio {kanaal} is al gelogd!")
-            time.sleep(30)
+            time.sleep(10)
         kanaal = zap(kanaal)
 
 # A welcome message to test our server
