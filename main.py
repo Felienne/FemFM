@@ -30,17 +30,28 @@ def nu():
         return datetime.now() + timedelta(hours=1)
 
 def huidig_liedje_op_radio(kanaal):
+    header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+
     if kanaal == '3':
         url = 'https://www.npo3fm.nl/api/tracks'
     elif kanaal == '538':
         url = "https://graph.talparad.io/?query=%7B%0A%20%20station(slug%3A%20%22radio-538%22)%20%7B%0A%20%20%20%20title%0A%20%20%20%20playouts(profile%3A%20%22%22%2C%20limit%3A%2010)%20%7B%0A%20%20%20%20%20%20broadcastDate%0A%20%20%20%20%20%20track%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20artistName%0A%20%20%20%20%20%20%20%20isrc%0A%20%20%20%20%20%20%20%20images%20%7B%0A%20%20%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%20%20%20%20uri%0A%20%20%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rankings%20%7B%0A%20%20%20%20%20%20%20%20listName%0A%20%20%20%20%20%20%20%20position%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20__typename%0A%20%20%20%20%7D%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D&variables=%7B%7D"
+        header['x-api-key']= 'da2-abza7qpnqbfe5ihpk4jhcslpgy'
+    elif kanaal == '10':
+        url = "https://graph.talparad.io/?query=%7B%0A%20%20station(slug%3A%20%22radio-10%22)%20%7B%0A%20%20%20%20title%0A%20%20%20%20playouts(profile%3A%20%22%22%2C%20limit%3A%2010)%20%7B%0A%20%20%20%20%20%20broadcastDate%0A%20%20%20%20%20%20track%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20artistName%0A%20%20%20%20%20%20%20%20isrc%0A%20%20%20%20%20%20%20%20images%20%7B%0A%20%20%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%20%20%20%20uri%0A%20%20%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rankings%20%7B%0A%20%20%20%20%20%20%20%20listName%0A%20%20%20%20%20%20%20%20position%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20__typename%0A%20%20%20%20%7D%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D&variables=%7B%7D"
+        header['x-api-key']= 'da2-33lf2avqmrbs3mgi66jogjj5ba'
+    elif kanaal == 'Sky':
+        url = "https://graph.talparad.io/?query=%7B%0A%20%20station(slug%3A%20%22sky-radio%22)%20%7B%0A%20%20%20%20title%0A%20%20%20%20playouts(profile%3A%20%22%22%2C%20limit%3A%2010)%20%7B%0A%20%20%20%20%20%20broadcastDate%0A%20%20%20%20%20%20track%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20artistName%0A%20%20%20%20%20%20%20%20isrc%0A%20%20%20%20%20%20%20%20images%20%7B%0A%20%20%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%20%20%20%20uri%0A%20%20%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rankings%20%7B%0A%20%20%20%20%20%20%20%20listName%0A%20%20%20%20%20%20%20%20position%0A%20%20%20%20%20%20%20%20__typename%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20__typename%0A%20%20%20%20%7D%0A%20%20%20%20__typename%0A%20%20%7D%0A%7D&variables=%7B%7D"
+        header['x-api-key']= 'da2-27bfqtcztfatfp7ef6feqg2wkq'
+    elif kanaal == 'Q':
+        url = "https://api.qmusic.nl/2.0/tracks/plays?limit=3&_station_id=qmusic_nl"
+    elif kanaal == 'Veronica':
+        url = 'https://api.radioveronica.nl/api/nowplaying?stationKey=VERONICA'
     else:
         url = f'http://www.nporadio{kanaal}.nl/api/tracks'
 
-    header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-              'x-api-key': 'da2-abza7qpnqbfe5ihpk4jhcslpgy'}
-
     publiek = ['1', '2', '3', '4', '5']
+    talpa = ['538', '10', 'Sky']
 
     r = requests.get(url, verify=False, headers=header)
 
@@ -54,11 +65,11 @@ def huidig_liedje_op_radio(kanaal):
             return None
 
         return liedje["artist"], liedje["title"], starttijd, eindtijd, eindtijd_object
-    else: #helaas pindakaas, niet allemaal dezelde data!
+    elif kanaal in talpa: #helaas pindakaas, niet allemaal dezelde data!
         data = json.loads(r.content)["data"]
         liedje = data['station']['playouts'][0]
         starttijd = liedje["broadcastDate"]
-        artiest = liedje['track']['artistName']
+        artiest = liedje['track']['artistName'].title() #for some reason this API give all caps
         titel = liedje['track']['title']
 
         #eindtijd wordt niet gegeven dus doe maar 3 mins erop, en ze lopen een uur achter zoals op de server (dit werkt dus waarschijnlijk online zo niet)
@@ -67,31 +78,36 @@ def huidig_liedje_op_radio(kanaal):
             return None
 
         return artiest, titel, starttijd, str(eindtijd_object), eindtijd_object
-def zap(kanaal, publiek=True):
-    if publiek:
-        if kanaal == '1':
-            return '2'
-        if kanaal == '2':
-            return '3'
-        if kanaal == '3':
-            return '4'
-        if kanaal == '4':
-            return '5'
-        if kanaal == '5':
-            return '1'
-        raise Exception("Onbekend station!!")
+    elif kanaal == "Veronica":
+        data = json.loads(r.content)
+        artiest = data["artist"]
+        titel = data['title']
+        duur = data["duration"]
+
+        eindtijd_object = datetime.now() + timedelta(seconds=duur)
+        if eindtijd_object < nu():
+            return None
+        return artiest, titel, datetime.now(), str(eindtijd_object), eindtijd_object
+
     else:
-        if kanaal == '1':
-            return 'Q'
-        if kanaal == 'Q':
-            return '2'
-        if kanaal == '2':
-            return '10'
-        if kanaal == '10':
-            return '538'
-        if kanaal == '538':
-            return '1'
-        raise Exception("Onbekend station!!")
+        data = json.loads(r.content)
+        liedje = data["played_tracks"][0]
+        titel = liedje['title']
+        artiest = liedje['artist']['name'].title() #for some reason this API give all caps
+        starttijd = liedje["played_at"]
+
+        #eindtijd wordt niet gegeven dus doe maar 3 mins erop, en ze lopen een uur achter zoals op de server (dit werkt dus waarschijnlijk online zo niet)
+        eindtijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%S+01:00') + timedelta(minutes=3)
+        if eindtijd_object < nu():
+            return None
+
+        return artiest, titel, starttijd, str(eindtijd_object), eindtijd_object
+
+def zap(kanaal):
+    alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
+    huidig_kanaal_index = alle_kanalen.index(kanaal)
+    nieuwe_index = (huidig_kanaal_index + 1) % len(alle_kanalen)
+    return alle_kanalen[nieuwe_index]
 
 
 def is_vrouw(artiest):
@@ -99,13 +115,12 @@ def is_vrouw(artiest):
 
 def genereer_uitvoer(kanaal):
     stats = session.get('stats')
-    publiek = False
 
     if x := huidig_liedje_op_radio(kanaal):
         artiest, titel, starttijd, eindtijd, eindtijd_object = x
 
         if not is_vrouw(artiest):
-            volgende_kanaal = zap(kanaal, publiek)
+            volgende_kanaal = zap(kanaal)
             tekst = f"Er speelt GEEN vrouw op Radio {kanaal}, maar {artiest}. Zappen maar!"
             wachttijd = "5"
             stats['Totaal aantal zaps'] += 1
@@ -137,6 +152,14 @@ def player(kanaal):
         return 'https://radioplayer.nporadio.nl/mini-player/radio5/'
     elif kanaal == '538':
         return 'https://partnerplayer.juke.nl/radio-538-player/stations/stations-radio-538/radio-538?autoplay=true'
+    elif kanaal == 'Sky':
+        return 'https://partnerplayer.juke.nl/sky-radio/stations/stations-sky-radio/sky-radio?autoplay=true'
+    elif kanaal == '10':
+        return 'https://partnerplayer.juke.nl/radio-10/stations/stations-radio-10/radio-10?autoplay=true'
+    elif kanaal == 'Veronica':
+        return 'https://stream.radioveronica.nl/veronica?dist=nlfm'
+    elif kanaal == "Q":
+        return 'https://player.qmusic.nl/8AQ5l9gSu7952HphVCOiiyGaCziBKdkR'
 
 # app.py
 from flask import Flask, request, jsonify
@@ -187,7 +210,7 @@ def index():
         'Aantal mannen gehoord': 0,
         'Totaal aantal zaps': 0
     }
-    return redirect(url_for("nu_op", kanaal=1))
+    return redirect(url_for("nu_op", kanaal=2))
 
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
