@@ -15,18 +15,6 @@ with open("women.txt", 'r') as w:
 lokaal = os.getenv('LOCAL_HOST')
 alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
 
-def alle_liedjes_van_radio(kanaal):
-    if kanaal == 3:
-        url = 'https://www.npo3fm.nl/api/tracks'
-    else:
-        url = f'http://www.nporadio{kanaal}.nl/api/tracks'
-
-    header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-
-    r = requests.get(url, verify=False, headers=header)
-    for liedje in json.loads(r.content)["data"]:
-        print(liedje["artist"], "-", liedje["title"])
-
 def nu():
     return datetime.now()
 
@@ -73,14 +61,14 @@ def huidig_liedje_op_radio(kanaal):
         artiest = liedje['track']['artistName'].title() #for some reason this API give all caps
         titel = liedje['track']['title']
 
-        starttijd = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%SZ') +timedelta(hours=1)
+        starttijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%SZ') +timedelta(hours=1)
 
         #eindtijd wordt niet gegeven dus doe maar 3 mins erop, en ze lopen een uur achter zoals op de server (dit werkt dus waarschijnlijk online zo niet)
-        eindtijd_object = starttijd +  timedelta(minutes=3)
+        eindtijd_object = starttijd_object + timedelta(minutes=3)
         if eindtijd_object < nu():
             return None
 
-        return artiest, titel, starttijd, str(eindtijd_object), eindtijd_object
+        return artiest, titel, starttijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
     elif kanaal == "Veronica":
         data = json.loads(r.content)
         artiest = data["artist"]
@@ -90,21 +78,22 @@ def huidig_liedje_op_radio(kanaal):
         eindtijd_object = datetime.now() + timedelta(seconds=duur)
         if eindtijd_object < nu():
             return None
-        return artiest, titel, datetime.now(), str(eindtijd_object), eindtijd_object
+        return artiest, titel, datetime.now().strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
 
-    else:
+    else: # "Q"
         data = json.loads(r.content)
         liedje = data["played_tracks"][0]
         titel = liedje['title']
         artiest = liedje['artist']['name'].title() #for some reason this API give all caps
         starttijd = liedje["played_at"]
+        starttijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%S+01:00')
 
-        #eindtijd wordt niet gegeven dus doe maar 3 mins erop, en ze lopen een uur achter zoals op de server (dit werkt dus waarschijnlijk online zo niet)
-        eindtijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%S+01:00') + timedelta(minutes=3)
+        #eindtijd wordt niet gegeven dus doe maar 3 mins erop
+        eindtijd_object = starttijd_object + timedelta(minutes=3)
         if eindtijd_object < nu():
             return None
 
-        return artiest, titel, starttijd, str(eindtijd_object), eindtijd_object
+        return artiest, titel, starttijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
 
 def zap(kanaal):
     huidig_kanaal_index = alle_kanalen.index(kanaal)
