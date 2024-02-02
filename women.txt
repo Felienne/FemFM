@@ -1,296 +1,404 @@
-Madonna
-Diana Ross
-Aretha Franklin
-Donna Summer
-Tina Turner
-Kate Bush
-Billie Holiday
-Dionne Warwick
-Chaka Khan
-Whitney Houston
-Cyndi Lauper
-Janet Jackson
-Cher
-Nina Simone
-Céline Dion
-Bonnie Tyler
-Sade
-Ella Fitzgerald
-Debbie Harry
-Minnie Riperton
-Grace Slick
-Karen Carpenter
-Kim Carnes
-Alanis Morissette
-Chrissie Hynde
-Etta James
-Laura Branigan
-Tina Charles
-Stevie Nicks
-Kim Wilde
-Sophie Ellis-Bextor
-Christina Aguilera
-Anita Baker
-Alicia Bridges
-Jennifer Rush
-Patrice Rushen
-Natalie Imbruglia
-Kylie Minogue
-Mary JBlige
-Carly Simon
-Annie Lennox
-Nancy Sinatra
-Adele
-Britney Spears
-Yvonne Elliman
-k.dlang
-Shania Twain
-Melanie C
-Neneh Cherry
-Beyoncé
-Patti Smith
-Sophie BHawkins
-Jewel
-Missy Elliott
-Paula Abdul
-Fiona Apple
-Mariah Carey
-Shakira
-Sheryl Crow
-Des'ree
-Diana King
-PJ Harvey
-Joan Osborne
-Elizabeth Fraser
-Tracey Thorn
-Beth Orton
-Nicola Hitchcock
-Sarah McLachlan
-Dido
-Bonnie Raitt
-Lauryn Hill
-Janis Joplin
-Cherrelle
-Pat Benatar
-Courtney Love
-Tracy Chapman
-Tori Amos
-Suzanne Vega
-Amy Winehouse
-Danielle Brisebois
-Joni Mitchell
-Colbie Caillat
-Norah Jones
-Vanessa Williams
-Barbra Streisand
-Alicia Keys
-Jennifer Warnes
-LeAnn Rimes
-Gloria Estefan
-Toni Braxton
-Erykah Badu
-Jessica Simpson
-Lisa 'Left Eye' Lopes
-Dolly Parton
-Joan Jett
-Gwen Stefani
-Paula Cole
-Candi Staton
-Lene Marlin
-Jennifer Paige
-Blondie
-Anouk
-Miss Montreal
-Meau
-S10
-Ilse de Lange
-Davina Michelle
-Ariana Grande
-Billie Eilish
-Taylor Swift
-Rihanna
-Beyoncé
-Adele
-Dua Lipa
-Cardi B
-Halsey
-Shakira
-Katy Perry
-Lady Gaga
-Sia
-Nicki Minaj
-Lizzo
-Camila Cabello
-Selena Gomez
-Demi Lovato
-Lana Del Rey
-Megan Thee Stallion
-Janelle Monáe
-Florence + The Machine
-H.E.R.
-Alicia Keys
-Kacey Musgraves
-Doja Cat
-Miley Cyrus
-Jess Glynne
-Lorde
-P!nk
-St. Vincent
-Ellie Goulding
-Marina
-FKA twigs
-Alessia Cara
-CHVRCHES
-Jessie J
-Zara Larsson
-Carly Rae Jepsen
-Tove Lo
-CHIKA
-Jorja Smith
-Ava Max
-Aurora
-Nao
-Anne-Marie
-Becky G
-Lauren Daigle
-Hayley Kiyoko
-Norah Jones
-AURORA
-Kehlani
-SZA
-Bishop Briggs
-Grace VanderWaal
-Kimbra
-Little Mix
-Zella Day
-Madison Beer
-Niki & Gabi
-LÉON
-Tash Sultana
-Tinashe
-Jhené Aiko
-Julia Michaels
-Skylar Grey
-Sabrina Carpenter
-Dagny
-Serpentwithfeet
-Joy Crookes
-Tove Styrke
-Maggie Rogers
-Nelly Furtado
-Imogen Heap
-PJ Harvey
-Kate Bush
-Duffy
-First Aid Kit
-Birdy
-Regina Spektor
-Tori Amos
-PJ Harvey
-KT Tunstall
-Alanis Morissette
-Joss Stone
-Vanessa Carlton
-The Chicks (formerly Dixie Chicks)
-La Roux
-Azealia Banks
-Bat for Lashes
-ZZ Ward
-Lights
-Gin Wigmore
-Ingrid Michaelson
-Yuna
-Joanna Newsom
-KT Tunstall
-M.I.A.
-Karol G
-Becky Hill
-Madison Reyes
-Maren Morris
-K.Flay
-ZZ Ward
-Dolly Parton
-Dixie D'Amelio
-Kelsea Ballerini
-Karol G
-Chelsea Cutler
-Sofia Reyes
-Ashe
-Jill Scott
-King Princess
-Amaarae
-Kim Petras
-Amanda Seyfried
-Sharon Van Etten
-Lianne La Havas
-AURORA
-Japanese Breakfast
-Celeste
-Jamila Woods
-Weyes Blood
-Yebba
-Leslie Grace
-Diamante Eléctrico
-Charly Bliss
-NIKI
-Tami Neilson
-DaniLeigh
-Phoebe Bridgers
-Celeste
-Yola
-Madeleine Peyroux
-Rina Sawayama
-Victoria Monét
-Tierra Whack
-Kito
-Dream Wife
-Lykke Li
-Renée Elise Goldsberry
-Valerie June
-Sarah Jarosz
-Molly Tuttle
-Jillian Jacqueline
-Yola
-Karol Conka
-Shea Diamond
-Alewya
-Juliana Hatfield
-Anouk
-Ilse DeLange
-Eva Simons
-Davina Michelle
-Maan
-Eefje de Visser
-Miss Montreal (Sanne Hans)
-Glennis Grace
-Roxeanne Hazes
-Naaz
-Wende
-Tabitha
-Elske DeWall
-Krystl
-Trijntje Oosterhuis
-Sabrina Starke
-Shary-An
-Caro Emerald
-Lakshmi
-Mayra Andrada
-Pink
-Jennifer Lopez
-Celine Dion
-Loreen
-Heart
-Natasha Bedingfield
-Roxy Dekker
-P!Nk
-Dolly Dots
-Sheila E.
-Anne Marie Ft. Shania Twain
-Sarah Julia
-Lucie Silvas
-The Bangles
-Anne-Marie & Shania Twain
 4 Non Blondes
-4 Non Blondes (Zit in de data van 31-01 als False!)
+Aaliyah
+Adele
+Adina Howard
+Alanis Morissette
+Alannah Myles
+Alessia Cara
+Alewya
+Alicia Bridges
+Alicia Keys
+Amaarae
+Amanda Seyfried
+Amy Macdonald
+Amy Winehouse
+Amy Winehouse & Mark Ronson
+Anastacia
+Anita Baker
+Anita Meyer
+Anna-Rose Clayton
+Anne Marie Ft. Shania Twain
+Anne-Marie
+Anne-Marie & Shania Twain
+Anne-Marie ft. Shania Twain
+Anne-Marie Shania Twain
+Annie Lennox
+Anouk
+Aretha Franklin
+Aretha Franklin & Eurythmics
+Ariana Grande
+Ashe
+Atomic Kitten
+Aurora
+Ava Max
+Azealia Banks
+Bangles
+Barbra Streisand
+Bat for Lashes
+Bebe Rexha
+Bebe Rexha & David Guetta
+Becky G
+Becky Hill
+Becky Hill & David Guetta
+Belinda Carlisle
+Bente
+Beth Orton
+Bette Midler
+Beyonce
+Beyoncé
+Beyonce Ft. Jay-Z
+Billie Eilish
+Billie Holiday
+Birdy
+Bishop Briggs
+Blondie
+Bonnie Raitt
+Bonnie Tyler
+Brigitte Kaandorp
+Britney Spears
+Camila Cabello
+Camila Cabello Ft. Ed Sheeran
+Candi Staton
+Cardi B
+Carly Rae Jepsen
+Carly Simon
+Caro Emerald
+Carole King
+Carole King (mist in data van feb 1)
+Catherine Ferry
+Ce Ce Peniston
+Celeste
+Celine Dion
+Céline Dion
+Celine Dion & Peabo Bryson
+Chaka Khan
+Charly Bliss
+Chelsea Cutler
+Cher
+Cherrelle
+Chi Coltrane
+CHIKA
+Chrissie Hynde
+Christina Aguilera
+CHVRCHES
+Colbie Caillat
+Conny Vandenbos
+Courtney Love
+Cyndi Lauper
+Dagny
+Dana
+Danielle Brisebois
+DaniLeigh
+Davina Michelle
+Debbie Harry
+Demi Lovato
+Deniece Williams
+Des'ree
+Desireless
+Diamante Eléctrico
+Diana King
+Diana Ross
+Dido
+Dionne Warwick
+Dixie D'Amelio
+Doja Cat
+Dolly Dots
+Dolly Parton
+Donna Summer
+Dream Wife
+Dua Lipa
+Duffy
+Dusty Springfield
+Eefje de Visser
+Elizabeth Fraser
+Ella Fitzgerald
+Ella Henderson
+Ellie Goulding
+Elske DeWall
+Emeli Sande
+Emeli Sandé
+Emma Heesters
+Emma Heesters & Rolf Sanchez
+En Vogue
+Erykah Badu
+Eternal
+Eternal & Be Be Winans
+Eternal & Bebe Winans
+Etta James
+Eva Simons
+Faith Evans
+Faith Evans & Free Masons
+Faith Evans & Freemasons
+Fine Young Cannibals
+Fiona Apple
+First Aid Kit
+FKA twigs
+Florence + The Machine
+France Gall
+Froukje
+Froukje (mist in data van feb 1)
+Gabrielle
+Gin Wigmore
+Glennis Grace
+Gloria Estefan
+Grace Slick
+Grace VanderWaal
+Gwen Stefani
+H.E.R.
+Halsey
+Hannah Mae
+Hayley Kiyoko
+Heart
+Heddy Lester
+Ilse de Lange
+Ilse DeLange
+Imogen Heap
+Ingrid Michaelson
+Jamila Woods
+Janelle Monáe
+Janet Jackson
+Janis Joplin
+Japanese Breakfast
+Jean Knight
+Jennifer Lopez
+Jennifer Lopez & Pitbull
+Jennifer Paige
+Jennifer Rush
+Jennifer Warnes
+Jess Glynne
+Jessica Simpson
+Jessie J
+Jessie J Feat. B.O.B.
+Jessie J Feat. B.O.B.(mist in data van feb 1)
+Jewel
+Jhené Aiko
+Jill Scott
+Jillian Jacqueline
+Joan Jett
+Joan Jett & The Blackhearts
+Joan Osborne
+Joanna Newsom
+Joni Mitchell
+Jorja Smith
+Joss Stone
+Joy Crookes
+Julia Michaels
+Juliana Hatfield
+June Lodge
+June Lodge & Prince Mohammed
+k.dlang
+K.Flay
+Kacey Musgraves
+Karen Carpenter
+Karol Conka
+Karol G
+Kate Bush
+Kate Ryan
+Katy Perry
+Katy Perry Ft. Skip Marley
+Katy Perry ft. Snoop Dogg
+Kehlani
+Kelly Clarkson
+Kelsea Ballerini
+Kenya Grace
+Kim Carnes
+Kim Petras
+Kim Wilde
+Kimbra
+King Princess
+Kito
+Krystl
+KT Tunstall
+Kylie Minogue
+La Roux
+Lady Gaga
+Lady Gaga & Bradley Cooper
+Lakshmi
+Lana Del Rey
+Laura Branigan
+Laura Pausini
+Lauren Daigle
+Lauren Spencer-Smith
+Lauryn Hill
+LeAnn Rimes
+Lene Marlin
+LÉON
+Leona Lewis
+Leslie Grace
+Lianne La Havas
+Libianca
+Lights
+Lilly Wood & The Prick
+Lily Allen
+Lisa 'Left Eye' Lopes
+Lisa Stansfield
+Little Mix
+Lizzo
+Lois Lane
+Loïs Lane
+Lorde
+Loreen
+Louise Massey & Her Westerners
+Lucie Silvas
+Lutricia Mcneal
+Lykke Li
+M.I.A.
+Maan
+Maan & Goldband
+Madeleine Peyroux
+Madison Beer
+Madison Reyes
+Madonna
+Maggie Rogers
+Mai Tai
+Maren Morris
+Mariah Carey
+Marianne Rosenberg
+Marie Laforet
+Marina
+Mary Hopkin
+Mary J. Blige & U2
+Mary JBlige
+Mayra Andrada
+Meau
+Megan Thee Stallion
+Melanie
+Melanie C
 Meredith Brooks
 Meredith Brooks (Zit in de data van 31-01 als False!)
+Miley Cyrus
+Minnie Riperton
+Miss Montreal
+Miss Montreal (Sanne Hans)
+Missy Elliott
+Molly Tuttle
+Monie Love
+Naaz
+Nancy Sinatra
+Nao
+Natalie Imbruglia
+Natasha Bedingfield
+Nelly Furtado
+Nena
+Nena & Kim Wilde
+Neneh Cherry
+Nicki Minaj
+Nicola Hitchcock
+NIKI
+Niki & Gabi
+Nina Simone
+Nona
+Norah Jones
+Oleta Adams
+Olivia Newton John
+Olivia Rodrigo
+P!nk
+Pat Benatar
+Patrice Rushen
+Patti Smith
+Paula Abdul
+Paula Cole
+Peggy Gou
+Petula Clark
+Phoebe Bridgers
+Pink
+PJ Harvey
+Pointer Sisters
+Pussycat Dolls
+Raffaella Carra
+Regina Spektor
+Renée Elise Goldsberry
+Rihanna
+Rihanna Ft Calvin Harris
+Rina Sawayama
+Rita Ora
+Roberta Flack
+Roberta Flack & Peabo Bryson
+Robin Beck
+Ronde
+Rondé
+Rosa Linn
+Roxeanne Hazes
+Roxy Dekker
+S10
+Sabrina Carpenter
+Sabrina Starke
+Sade
+Salt 'n Pepa
+Sandie Shaw
+Sandra Kim
+Sarah Jarosz
+Sarah Julia
+Sarah McLachlan
+Selena Gomez
+Sera
+Sera & Younotus
+Serpentwithfeet
+Shakira
+Shania Twain
+Shanice
+Sharon Van Etten
+Shary-An
+Shea Diamond
+Sheila E.
+Sheryl Crow
+Sheryl Lee Ralph
+Sia
+Sia Ft. Sean Paul
+Sister Sledge
+Skylar Grey
+Sofia Reyes
+Solid Harmonie
+Sophie BHawkins
+Sophie Ellis Bextor
+Sophie Ellis-Bextor
+Spice Girls
+Spice Girls (niet in GPT lijst!!)
+St. Vincent
+Stephanie Struijk
+Stevie Nicks
+Sugababes
+Suzanne Vega
+SZA
+Tabitha
+Tami Neilson
+Tanita Tikaram
+Tash Sultana
+Tasmin Archer
+Taylor Swift
+The Bangles
+The Chicks (formerly Dixie Chicks)
+The Pointer Sisters
+The Weather Girls
+Thelma Houston
+Tierra Whack
+Tina Charles
+Tina Turner
+Tinashe
+Titiyo
+TLC
+Toni Braxton
+Tori Amos
+Total Touch
+Tove Lo
+Tove Styrke
+Tracey Thorn
+Tracey Ullman
+Tracy Chapman
+Trijntje Oosterhuis
+Valerie June
+Vanessa Carlton
+Vanessa Williams
+Victoria Monét
+Wende
+Weyes Blood
+Whitney Houston
+WIES
+Yebba
+Yentl
+Yola
+Yuna
+Yvonne Elliman
+Zara Larsson
+Zella Day
+ZZ Ward

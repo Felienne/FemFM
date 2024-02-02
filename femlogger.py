@@ -15,26 +15,29 @@ def log():
                 writer = csv.writer(file)
                 writer.writerow(["Artiest", "Titel", "Starttijd", "Eindtijd", "Vrouw?", "Kanaal"])
 
-        laatste_liedje, eindtijd = laatste_liedje_op_kanaal[kanaal]
-        if datetime.now() > eindtijd: # het vorige liedje is nu afgelopen!
+        try:
+            laatste_liedje, eindtijd = laatste_liedje_op_kanaal[kanaal]
+            if datetime.now() > eindtijd: # het vorige liedje is nu afgelopen!
 
-            if x := femfm.huidig_liedje_op_radio(kanaal):
-                artiest, titel, starttijd, eindtijd, eindtijd_object = x
-                vrouw = femfm.is_vrouw(artiest)
-                if not laatste_liedje == titel:
-                    with open(bestand, 'a', newline='') as file:
-                        writer = csv.writer(file)
-                        writer.writerow([artiest, titel, starttijd, eindtijd, vrouw, kanaal])
+                if x := femfm.huidig_liedje_op_radio(kanaal):
+                    artiest, titel, starttijd, eindtijd, eindtijd_object = x
+                    vrouw = femfm.is_vrouw(artiest)
+                    if not laatste_liedje == titel:
+                        with open(bestand, 'a', newline='') as file:
+                            writer = csv.writer(file)
+                            writer.writerow([artiest.replace(",", "|"), titel.replace(",", "|"), starttijd, eindtijd, vrouw, kanaal])
 
-                    print("Logging ", artiest, titel, starttijd, vrouw, kanaal)
-                    laatste_liedje_op_kanaal[kanaal] = titel, eindtijd_object
+                        print("Logging ", artiest, titel, starttijd, vrouw, kanaal)
+                        laatste_liedje_op_kanaal[kanaal] = titel, eindtijd_object
+                else:
+                    print(f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}")
+                    time.sleep(15)
             else:
-                print(f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}")
+                print(f"Het liedje {laatste_liedje} op Radio {kanaal} is al gelogd!")
                 time.sleep(15)
-        else:
-            print(f"Het liedje {laatste_liedje} op Radio {kanaal} is al gelogd!")
-            time.sleep(15)
-        kanaal = femfm.zap(kanaal)
+            kanaal = femfm.zap(kanaal)
+        except Exception as E:
+            print(f"Foutje, bedankt! {str(E)}")
 
 if __name__ == '__main__':
     log()
