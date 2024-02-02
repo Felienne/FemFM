@@ -42,13 +42,13 @@ def index():
 
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
-    tekst, volgende_kanaal, wachttijd, stats = femfm.genereer_uitvoer(kanaal)
+    tekst, volgende_kanaal, wachttijd = femfm.genereer_uitvoer(kanaal)
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,
                     wachttijd=wachttijd,
                     iframe=player(kanaal),
-                    stats=stats)
+                    stats={})
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
