@@ -25,7 +25,7 @@ def log():
                     if not laatste_liedje == titel:
                         with open(bestand, 'a', newline='') as file:
                             writer = csv.writer(file)
-                            writer.writerow([artiest.replace(",", "|"), titel.replace(",", "|"), starttijd, eindtijd, vrouw, kanaal])
+                            writer.writerow([artiest, titel, starttijd, eindtijd, vrouw, kanaal])
 
                         print("Logging ", artiest, titel, starttijd, vrouw, kanaal)
                         laatste_liedje_op_kanaal[kanaal] = titel, eindtijd_object
