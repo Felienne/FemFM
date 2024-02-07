@@ -46,25 +46,37 @@ def index():
 
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
+    stats = session.get('stats')
+    if stats is None:
+        stats = {
+            'Maximaal aantal zaps': 0,
+            'Aantal vrouwen gehoord': 0,
+            'Aantal mannen gehoord': 0,
+            'Totaal aantal zaps': 0
+        }
+
     tekst, volgende_kanaal, wachttijd, vrouw, zap = femfm.genereer_uitvoer(kanaal)
 
-    if vrouw:
-        session['stats']['Aantal vrouwen gehoord'] += 1
-    else:
-        session['stats']['Aantal mannen gehoord'] += 1
+    if vrouw is not None: # geen liedje = None
+        if vrouw:
+            stats['Aantal vrouwen gehoord'] += 1
+        else:
+            stats['Aantal mannen gehoord'] += 1
 
     if zap:
-        session['stats']['Totaal aantal zaps'] += 1
+        stats['Totaal aantal zaps'] += 1
 
-        if session['stats']['Totaal aantal zaps'] > session['stats']['Maximaal aantal zaps']:
-            session['stats']['Maximaal aantal zaps'] = session['stats']['Totaal aantal zaps']
+        if stats['Totaal aantal zaps'] > stats['Maximaal aantal zaps']:
+            stats['Maximaal aantal zaps'] = stats['Totaal aantal zaps']
 
+    # save stats back to session
+    session['stats'] = stats
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,
                     wachttijd=wachttijd,
                     iframe=player(kanaal),
-                    stats=session['stats'])
+                    stats=stats)
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support

@@ -99,7 +99,7 @@ def huidig_liedje_op_radio(kanaal):
 
         return artiest, titel, starttijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
 
-def zap(kanaal):
+def zap_naar(kanaal):
     huidig_kanaal_index = alle_kanalen.index(kanaal)
     nieuwe_index = (huidig_kanaal_index + 1) % len(alle_kanalen)
     return alle_kanalen[nieuwe_index]
@@ -117,7 +117,7 @@ def genereer_uitvoer(kanaal):
         vrouw = is_vrouw(artiest)
 
         if not vrouw:
-            volgende_kanaal = zap(kanaal)
+            volgende_kanaal = zap_naar(kanaal)
             zap = True
             tekst = f"Er speelt GEEN vrouw op Radio {kanaal}, maar {artiest}. Zappen maar!"
             wachttijd = "5"
@@ -131,5 +131,6 @@ def genereer_uitvoer(kanaal):
         tekst = f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}. Even wachten nog...!"
         wachttijd = "30"
         volgende_kanaal = kanaal
+        vrouw = None
 
     return tekst, volgende_kanaal, wachttijd, vrouw, zap

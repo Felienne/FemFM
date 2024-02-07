@@ -35,7 +35,7 @@ def log():
             else:
                 print(f"Het liedje {laatste_liedje} op Radio {kanaal} is al gelogd!")
                 time.sleep(15)
-            kanaal = femfm.zap(kanaal)
+            kanaal = femfm.zap_naar(kanaal)
         except Exception as E:
             print(f"Foutje, bedankt! {str(E)}")
 
