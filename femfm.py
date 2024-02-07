@@ -7,16 +7,19 @@ import json
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+server = os.getenv('SERVER')
+
+
 with open("women.txt", 'r') as w:
     vrouwen = w.read().splitlines()
 
-
-
-lokaal = os.getenv('LOCAL_HOST')
 alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
 
 def nu():
-    return datetime.now()
+    if server=='Yes':
+        return datetime.now() + timedelta(hours=1)  # tijd op de server is een uur later
+    else:
+        return datetime.now()
 
 def huidig_liedje_op_radio(kanaal):
     header = {'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
@@ -54,6 +57,7 @@ def huidig_liedje_op_radio(kanaal):
             return None
 
         return liedje["artist"], liedje["title"], starttijd, eindtijd, eindtijd_object
+
     elif kanaal in talpa: #helaas pindakaas, niet allemaal dezelde data!
         data = json.loads(r.content)["data"]
         liedje = data['station']['playouts'][0]
@@ -61,7 +65,7 @@ def huidig_liedje_op_radio(kanaal):
         artiest = liedje['track']['artistName'].title() #for some reason this API give all caps
         titel = liedje['track']['title']
 
-        starttijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%SZ') +timedelta(hours=1)
+        starttijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%SZ')+timedelta(hours=1)
 
         #eindtijd wordt niet gegeven dus doe maar 3 mins erop, en ze lopen een uur achter zoals op de server (dit werkt dus waarschijnlijk online zo niet)
         eindtijd_object = starttijd_object + timedelta(minutes=3)
@@ -105,12 +109,16 @@ def is_vrouw(artiest):
     return artiest in vrouwen
 
 def genereer_uitvoer(kanaal):
+    vrouw = False
+    zap = False
 
     if x := huidig_liedje_op_radio(kanaal):
         artiest, titel, starttijd, eindtijd, eindtijd_object = x
+        vrouw = is_vrouw(artiest)
 
-        if not is_vrouw(artiest):
+        if not vrouw:
             volgende_kanaal = zap(kanaal)
+            zap = True
             tekst = f"Er speelt GEEN vrouw op Radio {kanaal}, maar {artiest}. Zappen maar!"
             wachttijd = "5"
         else:
@@ -124,4 +132,4 @@ def genereer_uitvoer(kanaal):
         wachttijd = "30"
         volgende_kanaal = kanaal
 
-    return tekst, volgende_kanaal, wachttijd
+    return tekst, volgende_kanaal, wachttijd, vrouw, zap

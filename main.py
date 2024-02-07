@@ -31,24 +31,40 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'GEHEIM!!!!'
 
-import csv
 
-
-
-# A welcome message to test our server
 @app.route('/')
 def index():
+    session['stats'] = {
+        'Maximaal aantal zaps': 0,
+        'Aantal vrouwen gehoord': 0,
+        'Aantal mannen gehoord': 0,
+        'Totaal aantal zaps': 0
+    }
     return redirect(url_for("nu_op", kanaal=2))
+
+
 
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
-    tekst, volgende_kanaal, wachttijd = femfm.genereer_uitvoer(kanaal)
+    tekst, volgende_kanaal, wachttijd, vrouw, zap = femfm.genereer_uitvoer(kanaal)
+
+    if vrouw:
+        session['stats']['Aantal vrouwen gehoord'] += 1
+    else:
+        session['stats']['Aantal mannen gehoord'] += 1
+
+    if zap:
+        session['stats']['Totaal aantal zaps'] += 1
+
+        if session['stats']['Totaal aantal zaps'] > session['stats']['Maximaal aantal zaps']:
+            session['stats']['Maximaal aantal zaps'] = session['stats']['Totaal aantal zaps']
+
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,
                     wachttijd=wachttijd,
                     iframe=player(kanaal),
-                    stats={})
+                    stats=session['stats'])
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
