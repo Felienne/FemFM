@@ -16,7 +16,7 @@ with open("women.txt", 'r') as w:
 alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
 
 def nu():
-    if server=='Yes':
+    if server == 'Yes':
         return datetime.now() + timedelta(hours=1)  # tijd op de server is een uur later
     else:
         return datetime.now()
@@ -79,10 +79,10 @@ def huidig_liedje_op_radio(kanaal):
         titel = data['title']
         duur = data["duration"]
 
-        eindtijd_object = datetime.now() + timedelta(seconds=duur)
+        eindtijd_object = nu() + timedelta(seconds=duur)
         if eindtijd_object < nu():
             return None
-        return artiest, titel, datetime.now().strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
+        return artiest, titel, nu().strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
 
     else: # "Q"
         data = json.loads(r.content)
@@ -123,12 +123,12 @@ def genereer_uitvoer(kanaal):
             wachttijd = "5"
         else:
             tekst = f"Er speelt een vrouw op Radio {kanaal}! Namelijk {artiest} met {titel}. " \
-                    f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M:%S')} en het is nu {datetime.now().strftime('%H:%M:%S')}."
-            duur = (eindtijd_object - datetime.now()).total_seconds()
+                    f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M:%S')} en het is nu {nu().strftime('%H:%M:%S')}."
+            duur = (eindtijd_object -nu()).total_seconds()
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
             volgende_kanaal = kanaal
     else:
-        tekst = f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}. Even wachten nog...!"
+        tekst = f"We zijn {'wel' if server else 'niet'} op de server. Het is nu {nu().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}. Even wachten nog...!"
         wachttijd = "30"
         volgende_kanaal = kanaal
         vrouw = None
