@@ -60,6 +60,7 @@ def nu_op(kanaal):
     if vrouw is not None: # geen liedje = None
         if vrouw:
             stats['Aantal vrouwen gehoord'] += 1
+            stats['Totaal aantal zaps'] = 0
         else:
             stats['Aantal mannen gehoord'] += 1
 
@@ -70,7 +71,12 @@ def nu_op(kanaal):
             stats['Maximaal aantal zaps'] = stats['Totaal aantal zaps']
 
     # save stats back to session
+
+    aantal_liedjes = stats['Aantal mannen gehoord'] + stats['Aantal vrouwen gehoord']
+    stats['Percentage'] = 0 if aantal_liedjes == 0 else round(stats['Aantal vrouwen gehoord']/aantal_liedjes*100,1)
+
     session['stats'] = stats
+
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,

@@ -120,7 +120,7 @@ def genereer_uitvoer(kanaal):
             volgende_kanaal = zap_naar(kanaal)
             zap = True
             tekst = f"Er speelt GEEN vrouw op Radio {kanaal}, maar {artiest}. Zappen maar!"
-            wachttijd = "5"
+            wachttijd = "10"
         else:
             tekst = f"Er speelt een vrouw op Radio {kanaal}! Namelijk {artiest} met {titel}. " \
                     f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M:%S')} en het is nu {nu().strftime('%H:%M:%S')}."
