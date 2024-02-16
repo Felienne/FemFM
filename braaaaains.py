@@ -29,76 +29,95 @@ else:
         all_data = [{h: x for (h, x) in zip(headers, row)} for row in reader]
         already_saved = [r['Artiest'] for r in all_data]
 
-def save_artiest(output_bestand, artiest, gender, percentage, type):
+def save_artiest(output_bestand, artiest, gender, percentage, type, brainz_artist):
     with open(output_bestand, 'a+', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow([artiest, gender, percentage, type, 'MusicBrainz'])
+        writer.writerow([artiest, gender, percentage, type, 'MusicBrainz', brainz_artist])
 
 i = 0
+
+
+def fetch_group(brain_artist):
+    record = {}
+    members = musicbrainzngs.get_artist_by_id(brain_artist['id'], includes=['artist-rels'])
+
+    try:
+        members = [m for m in members['artist']['artist-relation-list'] if m['type'] == 'member of band']
+        # there can be a key error: KeyError: 'artist-relation-list'
+    except:
+        members = []
+
+    women = 0
+    for m in members:
+        member_id = m['target']
+        member = musicbrainzngs.get_artist_by_id(member_id)
+        gender = member['artist'].get('gender', '?')
+        if gender == 'Female':
+            women += 1
+    gender_string = ''
+    if women == len(members):
+        gender_string = 'Vrouw'
+    elif women == 0:
+        gender_string = 'Man'
+    else:
+        gender_string = 'Mix'
+    record['Gender'] = gender_string
+    record['Percentage'] = '0' if len(members) == 0 else str(100 * women / len(members))
+    return record
+
+
+def fetch_person(brain_artist):
+    artist_gender = brain_artist.get('gender', '?')
+    if artist_gender == 'male':
+        record['Gender'] = 'Man'
+    elif artist_gender == 'female':
+        record['Gender'] = 'Vrouw'
+    elif artist_gender == '?':
+        record['Gender'] = '?'
+    return record
+
+
+def fetch_brain_artist(artiest):
+    brain_artist_matches = musicbrainzngs.search_artists(artiest)
+    brain_artist_matches = brain_artist_matches['artist-list']
+    # simply fetch the first (best?) match
+    if type(brain_artist_matches) is list:
+        brain_artist = brain_artist_matches[0]  # guessing it is not always a list?
+    else:
+        brain_artist = brain_artist_matches
+    return brain_artist
+
 for record in data:
     artiest = record['Artiest']
     if not artiest in already_saved:
         try:
             print(str(round(i/(len(data)-len(already_saved))*100,2))+"%")
             i += 1
-            brain_artist_matches = musicbrainzngs.search_artists(artiest)
-            brain_artist_matches = brain_artist_matches['artist-list']
 
-            # simply fetch the first (best?) match
-            if type(brain_artist_matches) is list:
-                brain_artist = brain_artist_matches[0] #guessing it is not always a list?
-            else:
-                brain_artist = brain_artist_matches
+            brain_artist = fetch_brain_artist(artiest)
             artist_type = brain_artist.get('type', 'Group')
 
-            seperation_symbols = ['&', 'Ft', 'ft', '/', '|', 'Feat. ', 'Feat ', 'Featuring', 'featuring']
+            seperation_symbols = [' X ', 'Ft', 'ft', '/', '|', 'Feat. ', 'Feat ', 'Featuring', 'featuring']
             ft_present = any([x in artiest for x in seperation_symbols])
 
-            #change this if to any!!
             if ft_present:
                 for s in seperation_symbols:
                     if s in artiest:
-                        artiest = artiest.split(s)[0]
-                save_artiest(output_bestand, record["Artiest"], "?", '0', 'Featuring')
+                        artiest = artiest.split(s)[0] # fetch 1st artist
+
+                brain_artist = fetch_brain_artist(artiest)
+                person = fetch_person(brain_artist)
+                save_artiest(output_bestand, record["Artiest"], person['Gender'], '0', 'Featuring', brain_artist['name'])
 
             elif artist_type == 'Group':
+                group = fetch_group(brain_artist)
+                save_artiest(output_bestand, artiest, group["Gender"], group['Percentage'], 'Group', brain_artist['name'])
 
-                members = musicbrainzngs.get_artist_by_id(brain_artist['id'], includes=['artist-rels'])
-                members = [m for m in members['artist']['artist-relation-list'] if m['type'] == 'member of band']
-                # there can be a key error: KeyError: 'artist-relation-list'
-
-                women = 0
-                for m in members:
-                    member_id = m['target']
-                    member = musicbrainzngs.get_artist_by_id(member_id)
-                    gender = member['artist'].get('gender', '?')
-                    if gender == 'Female':
-                        women += 1
-
-                gender_string = ''
-                if women == len(members):
-                    gender_string = 'Vrouw'
-                elif women == 0:
-                    gender_string = 'Man'
-                else:
-                    gender_string = 'Mix'
-
-                record['Gender'] = gender_string
-                record['Percentage'] = '0' if len(members) == 0 else str(100*women/len(members))
-                record['Type'] = 'Group'
-                save_artiest(output_bestand, record["Artiest"], record["Gender"], record['Percentage'], record["Type"])
             elif artist_type == 'Person':
-                record['Type'] = 'Person'
-                artist_gender = brain_artist.get('gender', '?')
-                if artist_gender == 'male':
-                    record['Gender'] = 'Man'
-                elif artist_gender == 'female':
-                    record['Gender'] = 'Vrouw'
-                elif artist_gender == '?':
-                    record['Gender'] = '?'
-                save_artiest(output_bestand, record["Artiest"], record["Gender"], '0', record["Type"])
+                person = fetch_person(brain_artist)
+                save_artiest(output_bestand, artiest, person["Gender"], '0','Person', brain_artist['name'])
         except Exception as E:
-            save_artiest(output_bestand, record["Artiest"], "?", '0',f"Error{str(E)}")
+            save_artiest(output_bestand, record["Artiest"], "?", '0',f"Error{str(E)}", '?')
 #notes:
 # Ezra Glatt is geen vrouw!!!
 # maar Julia Sabaté is geen man?!
