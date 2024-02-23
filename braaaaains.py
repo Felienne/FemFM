@@ -8,7 +8,9 @@ musicbrainzngs.set_useragent(
     "https://github.com/felienne/femfm/",
 )
 
-with open('to_classify_until_feb_10.csv', encoding='utf-8-sig', newline='') as csvfile:
+input_file = 'to_classify_incl_manual_until_feb_16.csv'
+
+with open(input_file, encoding='utf-8-sig', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=';', quotechar='"')
     headers = next(reader)
     data = [{h: x for (h, x) in zip(headers, row)} for row in reader]
@@ -54,7 +56,6 @@ def fetch_group(brain_artist):
         gender = member['artist'].get('gender', '?')
         if gender == 'Female':
             women += 1
-    gender_string = ''
     if women == len(members):
         gender_string = 'Vrouw'
     elif women == 0:
@@ -62,7 +63,7 @@ def fetch_group(brain_artist):
     else:
         gender_string = 'Mix'
     record['Gender'] = gender_string
-    record['Percentage'] = '0' if len(members) == 0 else str(100 * women / len(members))
+    record['Percentage'] = '?' if len(members) == 0 else str(100 * women / len(members))
     return record
 
 
@@ -97,7 +98,7 @@ for record in data:
             brain_artist = fetch_brain_artist(artiest)
             artist_type = brain_artist.get('type', 'Group')
 
-            seperation_symbols = [' X ', 'Ft', 'ft', '/', '|', 'Feat. ', 'Feat ', 'Featuring', 'featuring']
+            seperation_symbols = ['feat. ', ', ', ' & ', ' X ', 'Ft', 'ft', '/', '|', 'Feat. ', 'Feat ', 'Featuring', 'featuring']
             ft_present = any([x in artiest for x in seperation_symbols])
 
             if ft_present:
@@ -106,8 +107,17 @@ for record in data:
                         artiest = artiest.split(s)[0] # fetch 1st artist
 
                 brain_artist = fetch_brain_artist(artiest)
-                person = fetch_person(brain_artist)
-                save_artiest(output_bestand, record["Artiest"], person['Gender'], '0', 'Featuring', brain_artist['name'])
+                artist_type = brain_artist.get('type', 'Group')
+
+                if artist_type == 'Group':
+                    group = fetch_group(brain_artist)
+                    save_artiest(output_bestand, record["Artiest"], group["Gender"], group['Percentage'], 'Featuring-Group',brain_artist['name'])
+                elif artist_type == 'Person':
+                    person = fetch_person(brain_artist)
+                    percentage = 100 if person['Gender'] == 'Vrouw' else 0
+                    save_artiest(output_bestand, record["Artiest"], person['Gender'], percentage, 'Featuring-Person', brain_artist['name'])
+                else:
+                    save_artiest(output_bestand, record["Artiest"], '?', '?', 'Overig', brain_artist['name'])
 
             elif artist_type == 'Group':
                 group = fetch_group(brain_artist)
@@ -116,8 +126,14 @@ for record in data:
             elif artist_type == 'Person':
                 person = fetch_person(brain_artist)
                 save_artiest(output_bestand, artiest, person["Gender"], '0','Person', brain_artist['name'])
+
+            else:
+                save_artiest(output_bestand, record["Artiest"], '?', '0', 'Featuring', brain_artist['name'])
+
         except Exception as E:
             save_artiest(output_bestand, record["Artiest"], "?", '0',f"Error{str(E)}", '?')
 #notes:
 # Ezra Glatt is geen vrouw!!!
 # maar Julia Sabaté is geen man?!
+
+# Blackbird Blackbird is niet de nederlandse singer singwriter?
