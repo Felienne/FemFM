@@ -106,6 +106,8 @@ def zap_naar(kanaal):
 
 
 def is_vrouw(artiest):
+    # todo: hier moeten we nog even ook zoeken in een lijst mannen
+    # en als we beiden niet vinden, musicbrainz raadplagen
     return artiest in vrouwen
 
 def genereer_uitvoer(kanaal):

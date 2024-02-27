@@ -8,7 +8,7 @@ musicbrainzngs.set_useragent(
     "https://github.com/felienne/femfm/",
 )
 
-input_file = 'to_classify_incl_manual_until_feb_16.csv'
+input_file = 'to_classify_NA_17_feb_to_26_feb.csv'
 
 with open(input_file, encoding='utf-8-sig', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=';', quotechar='"')
@@ -62,7 +62,7 @@ def fetch_group(brain_artist):
         gender_string = 'Man'
     else:
         gender_string = 'Mix'
-    record['Gender'] = gender_string
+    record['Gender'] = '?' if len(members) == 0 else gender_string
     record['Percentage'] = '?' if len(members) == 0 else str(100 * women / len(members))
     return record
 
@@ -89,11 +89,11 @@ def fetch_brain_artist(artiest):
     return brain_artist
 
 for record in data:
-    artiest = record['Artiest']
-    if not artiest in already_saved:
+    artiest = record.get('Artiest', None)
+    i += 1
+    if artiest and artiest not in already_saved:
         try:
-            print(str(round(i/(len(data)-len(already_saved))*100,2))+"%")
-            i += 1
+            print(str(round(i/(len(data))*100, 2))+"%")
 
             brain_artist = fetch_brain_artist(artiest)
             artist_type = brain_artist.get('type', 'Group')
@@ -125,7 +125,8 @@ for record in data:
 
             elif artist_type == 'Person':
                 person = fetch_person(brain_artist)
-                save_artiest(output_bestand, artiest, person["Gender"], '0','Person', brain_artist['name'])
+                percentage = 100 if person['Gender'] == 'Vrouw' else 0
+                save_artiest(output_bestand, artiest, person["Gender"], percentage, 'Person', brain_artist['name'])
 
             else:
                 save_artiest(output_bestand, record["Artiest"], '?', '0', 'Featuring', brain_artist['name'])

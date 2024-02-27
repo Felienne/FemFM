@@ -1,74 +1,1795 @@
-01-02-2024,06:00,10:00,Radio-10,Ekdom in de Morgen,
-01-02-2024,10:00,12:00,Radio-10,Dennis Verheugd,
-01-02-2024,12:00,14:00,Radio-10,Jeroen Nieuwenhuize,
-01-02-2024,14:00,16:00,Radio-10,Edwin Diergaarde,
-01-02-2024,16:00,19:00,Radio-10,Somertijd,
-01-02-2024,19:00,21:00,Radio-10,Edwin Ouwehand,
-01-02-2024,21:00,23:00,Radio-10,René Verkerk,
-01-02-2024,23:00,00:00,Radio-10,De Nacht Wacht,
-01-02-2024,00:00,06:00,Radio-10,Nacht van 10,
-01-02-2024,05:00,09:00,Sky-Radio,Nonstop Music Morning Show,
-01-02-2024,09:00,09:30,Sky-Radio,Top 5 Over 9,
-01-02-2024,09:30,13:00,Sky-Radio,Nonstop @Work,
-01-02-2024,13:00,16:00,Sky-Radio,Non Stop,
-01-02-2024,16:00,19:00,Sky-Radio,Feel Good Afternoon,
-01-02-2024,19:00,22:00,Sky-Radio,Feel Good Evening,
-01-02-2024,22:00,00:00,Sky-Radio,Lovesongs,
-01-02-2024,00:00,05:00,Sky-Radio,@Night,
-01-02-2024,05:00,09:00,Sky-Radio,Nonstop Music Morning Show,
-01-02-2024,06:00,10:00,Qmusic,Mattie & Marieke,
-01-02-2024,10:00,11:00,Qmusic,Het Foute Uur,
-01-02-2024,11:00,13:00,Qmusic,Menno Barreveld,
-01-02-2024,13:00,16:00,Qmusic,Wim van Helden,
-01-02-2024,16:00,19:00,Qmusic,Domien Verschuuren,
-01-02-2024,19:00,22:00,Qmusic,Joost Swinkels,
-01-02-2024,22:00,01:00,Qmusic,Lars Boele,
-01-02-2024,01:00,03:00,Qmusic,Judith Eijk,
-01-02-2024,03:00,06:00,Qmusic,Qmusic,
-01-02-2024,06:00,09:00,Radio-Veronica,Ook Goeiemorgen,
-01-02-2024,09:00,12:00,Radio-Veronica,Goud van Oud,
-01-02-2024,12:00,14:00,Radio-Veronica,Frank op Veronica,
-01-02-2024,14:00,16:00,Radio-Veronica,De Bonanza,
-01-02-2024,16:00,18:00,Radio-Veronica,De Veronica Middagshow,
-01-02-2024,18:00,19:00,Radio-Veronica,Veronica Anthems,
-01-02-2024,19:00,21:00,Radio-Veronica,Herman Hofman,
-01-02-2024,21:00,00:00,Radio-Veronica,Willem Doreleijers,
-01-02-2024,00:00,01:00,Radio-Veronica,Muziek Voor Volwassenen,
-01-02-2024,01:00,05:00,Radio-Veronica,Oh Wat Een Nacht,
-01-02-2024,05:00,06:00,Radio-Veronica,The Warming Up,
-01-02-2024,06:00,10:00,Radio-538,De 538 Ochtendshow,
-01-02-2024,10:00,13:00,Radio-538,Lindo Duvall,
-01-02-2024,13:00,16:00,Radio-538,Mark Labrand,
-01-02-2024,16:00,19:00,Radio-538,De 538 Middagshow,
-01-02-2024,19:00,21:00,Radio-538,Martijn La Grouw,
-01-02-2024,21:00,00:00,Radio-538,Bas & Dylan,
-01-02-2024,00:00,03:00,Radio-538,Kylian van Luijt,
-01-02-2024,03:00,05:00,Radio-538,Marnix Westhuis,
-01-02-2024,05:00,06:00,Radio-538,De 538 Ochtendshow,
-01-02-2024,06:00,09:00,NPO-Radio-2,Jan-Willem Start Op,bnnvara
-01-02-2024,09:00,12:00,NPO-Radio-2,Aan de Slag,AvroTros
-01-02-2024,12:00,14:00,NPO-Radio-2,Annemiekes A-Lunch,AvroTros
-01-02-2024,14:00,16:00,NPO-Radio-2,Gijs 2.4,kro-ncrv
-01-02-2024,16:00,18:00,NPO-Radio-2,De Wild in de Middag,PowNed
-01-02-2024,18:00,20:00,NPO-Radio-2,Het Oor Wil Ook Wat,kro-ncrv
-01-02-2024,20:00,22:00,NPO-Radio-2,Met Morad,bnnvara
-01-02-2024,22:00,00:00,NPO-Radio-2,Dees Moet Je Horen,PowNed
-01-02-2024,00:00,04:00,NPO-Radio-2,Top 2000 Dossier,
-01-02-2024,04:00,06:00,NPO-Radio-2,Dit Is Tannaz,EO
-01-02-2024,06:00,09:00,NPO-Radio-3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
-01-02-2024,09:00,10:00,NPO-Radio-3,Tom & Joe,bnnvara
-01-02-2024,10:00,13:00,NPO-Radio-3,Het Betere Werk,AvroTros
-01-02-2024,13:00,16:00,NPO-Radio-3,Ivo van Breukelen,kro-ncrv
-01-02-2024,16:00,19:00,NPO-Radio-3,Barend & Benner,PowNed
-01-02-2024,19:00,22:00,NPO-Radio-3,Jaimy de Ruijter,bnnvara
-01-02-2024,22:00,01:00,NPO-Radio-3,VoorAan,PowNed
-01-02-2024,01:00,04:00,NPO-Radio-3,Floris Molenaar,kro-ncrv
-01-02-2024,04:00,06:00,NPO-Radio-3,Andres Odijk,kro-ncrv
-01-02-2024,06:00,09:00,NPO-Radio-5,Goeiedag Haandrikman,Max
-01-02-2024,09:00,12:00,NPO-Radio-5,Arbeidsvitaminen,AvroTros
-01-02-2024,12:00,14:00,NPO-Radio-5,Lunch Lekker,Max
-01-02-2024,14:00,16:00,NPO-Radio-5,Open Huis,EO
-01-02-2024,16:00,18:00,NPO-Radio-5,BertOp5,kro-ncrv
-01-02-2024,18:00,20:00,NPO-Radio-5,De Avondstart,Max
-01-02-2024,20:00,23:00,NPO-Radio-5,De Avond Van 5,EO
-01-02-2024,23:00,06:00,NPO-Radio-5,Muzieknacht,NPO Radio 5
+01-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+01-02-2024,10:00,12:00,Radio-10,10,Dennis Verheugd,
+01-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+01-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+01-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+01-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+01-02-2024,21:00,23:00,Radio-10,10,René Verkerk,
+01-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+01-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+02-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+02-02-2024,10:00,12:00,Radio-10,10,Dennis Verheugd,
+02-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+02-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+02-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+02-02-2024,19:00,21:00,Radio-10,10,Happy Hours,
+02-02-2024,21:00,00:00,Radio-10,10,Den’s Fever,
+02-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+03-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+03-02-2024,07:00,10:00,Radio-10,10,Silvan Stoet,
+03-02-2024,10:00,12:00,Radio-10,10,Robert Feller,
+03-02-2024,12:00,15:00,Radio-10,10,Is Het Al Weekend,
+03-02-2024,15:00,18:00,Radio-10,10,Jan-Paul Grootentraast,
+03-02-2024,18:00,21:00,Radio-10,10,Jules van Hest,
+03-02-2024,21:00,00:00,Radio-10,10,Sven’s Classix,
+03-02-2024,00:00,01:00,Radio-10,10,Disco Mix,
+03-02-2024,01:00,07:00,Radio-10,10,Het Weekend van 10,
+04-02-2024,01:00,07:00,Radio-10,10,Het Weekend van 10,
+04-02-2024,07:00,10:00,Radio-10,10,Silvan Stoet,
+04-02-2024,10:00,12:00,Radio-10,10,Robert Feller,
+04-02-2024,12:00,15:00,Radio-10,10,Is Het Al Weekend,
+04-02-2024,15:00,18:00,Radio-10,10,Jan-Paul Grootentraast,
+04-02-2024,18:00,21:00,Radio-10,10,Jules van Hest,
+04-02-2024,21:00,00:00,Radio-10,10,Top 4000 Classics,
+04-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+05-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+05-02-2024,10:00,12:00,Radio-10,10,Dennis Verheugd,
+05-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+05-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+05-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+05-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+05-02-2024,21:00,23:00,Radio-10,10,René Verkerk,
+05-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+05-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+06-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+06-02-2024,10:00,12:00,Radio-10,10,Dennis Verheugd,
+06-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+06-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+06-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+06-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+06-02-2024,21:00,23:00,Radio-10,10,René Verkerk,
+06-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+06-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+07-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+07-02-2024,10:00,12:00,Radio-10,10,Dennis Verheugd,
+07-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+07-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+07-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+07-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+07-02-2024,21:00,23:00,Radio-10,10,René Verkerk,
+07-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+07-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+08-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+08-02-2024,10:00,12:00,Radio-10,10,Dennis Verheugd,
+08-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+08-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+08-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+08-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+08-02-2024,21:00,23:00,Radio-10,10,René Verkerk,
+08-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+08-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+09-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+09-02-2024,10:00,12:00,Radio-10,10,Dennis Verheugd,
+09-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+09-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+09-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+09-02-2024,19:00,21:00,Radio-10,10,Happy Hours,
+09-02-2024,21:00,00:00,Radio-10,10,Den’s Fever,
+09-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+10-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+10-02-2024,07:00,10:00,Radio-10,10,Silvan Stoet,
+10-02-2024,10:00,12:00,Radio-10,10,Robert Feller,
+10-02-2024,12:00,15:00,Radio-10,10,Is Het Al Weekend,
+10-02-2024,15:00,18:00,Radio-10,10,Dennis Verheugd,
+10-02-2024,18:00,21:00,Radio-10,10,Jules van Hest,
+10-02-2024,21:00,00:00,Radio-10,10,Sven’s Classix,
+10-02-2024,00:00,01:00,Radio-10,10,Disco Mix,
+10-02-2024,01:00,07:00,Radio-10,10,Het Weekend van 10,
+11-02-2024,01:00,07:00,Radio-10,10,Het Weekend van 10,
+11-02-2024,07:00,10:00,Radio-10,10,Silvan Stoet,
+11-02-2024,10:00,12:00,Radio-10,10,Robert Feller,
+11-02-2024,12:00,15:00,Radio-10,10,Is Het Al Weekend,
+11-02-2024,15:00,18:00,Radio-10,10,Dennis Verheugd,
+11-02-2024,18:00,21:00,Radio-10,10,Jules van Hest,
+11-02-2024,21:00,00:00,Radio-10,10,Top 4000 Classics,
+11-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+12-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+12-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+12-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+12-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+12-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+12-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+12-02-2024,21:00,23:00,Radio-10,10,Jan-Paul Grootentraast,
+12-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+12-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+13-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+13-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+13-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+13-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+13-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+13-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+13-02-2024,21:00,23:00,Radio-10,10,Jan-Paul Grootentraast,
+13-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+13-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+14-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+14-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+14-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+14-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+14-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+14-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+14-02-2024,21:00,23:00,Radio-10,10,René Verkerk,
+14-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+14-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+15-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+15-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+15-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+15-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+15-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+15-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+15-02-2024,21:00,23:00,Radio-10,10,René Verkerk,
+15-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+15-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+16-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+16-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+16-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+16-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+16-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+16-02-2024,19:00,21:00,Radio-10,10,Happy Hours,
+16-02-2024,21:00,00:00,Radio-10,10,Den’s Fever,
+16-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+17-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+17-02-2024,07:00,10:00,Radio-10,10,Jan-Paul Grootentraast,
+17-02-2024,10:00,12:00,Radio-10,10,Robert Feller,
+17-02-2024,12:00,15:00,Radio-10,10,Is Het Al Weekend,
+17-02-2024,15:00,18:00,Radio-10,10,Dennis Verheugd,
+17-02-2024,18:00,21:00,Radio-10,10,Jules van Hest,
+17-02-2024,21:00,00:00,Radio-10,10,Sven’s Classix,
+17-02-2024,00:00,01:00,Radio-10,10,Disco Mix,
+17-02-2024,01:00,07:00,Radio-10,10,Het Weekend van 10,
+18-02-2024,01:00,07:00,Radio-10,10,Het Weekend van 10,
+18-02-2024,07:00,10:00,Radio-10,10,Jan-Paul Grootentraast,
+18-02-2024,10:00,12:00,Radio-10,10,Robert Feller,
+18-02-2024,12:00,15:00,Radio-10,10,Is Het Al Weekend,
+18-02-2024,15:00,18:00,Radio-10,10,Dennis Verheugd,
+18-02-2024,18:00,21:00,Radio-10,10,Jules van Hest,
+18-02-2024,21:00,00:00,Radio-10,10,Top 4000 Classics,
+18-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+19-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+19-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+19-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+19-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+19-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+19-02-2024,19:00,21:00,Radio-10,10,Dennis Verheugd,
+19-02-2024,21:00,23:00,Radio-10,10,Jan-Paul Grootentraast,
+19-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+19-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+20-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+20-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+20-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+20-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+20-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+20-02-2024,19:00,21:00,Radio-10,10,Jules van Hest,
+20-02-2024,21:00,23:00,Radio-10,10,Jan-Paul Grootentraast,
+20-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+20-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+21-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+21-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+21-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+21-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+21-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+21-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+21-02-2024,21:00,23:00,Radio-10,10,Jules van Hest,
+21-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+21-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+22-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+22-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+22-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+22-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+22-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+22-02-2024,19:00,21:00,Radio-10,10,Edwin Ouwehand,
+22-02-2024,21:00,23:00,Radio-10,10,Jules van Hest,
+22-02-2024,23:00,00:00,Radio-10,10,De Nacht Wacht,
+22-02-2024,00:00,06:00,Radio-10,10,Nacht van 10,
+23-02-2024,06:00,10:00,Radio-10,10,Ekdom in de Morgen,
+23-02-2024,10:00,12:00,Radio-10,10,Martijn Kolkman,
+23-02-2024,12:00,14:00,Radio-10,10,Jeroen Nieuwenhuize,
+23-02-2024,14:00,16:00,Radio-10,10,Edwin Diergaarde,
+23-02-2024,16:00,19:00,Radio-10,10,Somertijd,
+23-02-2024,19:00,21:00,Radio-10,10,Happy Hours,
+23-02-2024,21:00,00:00,Radio-10,10,Den’s Fever,
+23-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+24-02-2024,00:00,07:00,Radio-10,10,Het Weekend van 10,
+24-02-2024,07:00,10:00,Radio-10,10,Silvan Stoet,
+24-02-2024,10:00,12:00,Radio-10,10,Robert Feller,
+24-02-2024,12:00,15:00,Radio-10,10,Is Het Al Weekend,
+24-02-2024,15:00,18:00,Radio-10,10,Dennis Verheugd,
+24-02-2024,18:00,21:00,Radio-10,10,Jules van Hest,
+24-02-2024,21:00,00:00,Radio-10,10,Sven’s Classix,
+24-02-2024,00:00,01:00,Radio-10,10,Disco Mix,
+24-02-2024,01:00,07:00,Radio-10,10,Het Weekend van 10,
+01-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+01-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+01-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+01-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+01-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+01-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+01-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+01-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+01-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+02-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+02-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+02-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+02-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+02-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+02-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+02-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+02-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+02-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+03-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+03-02-2024,09:00,13:00,Sky-Radio,Sky,Nonstop Weekend,
+03-02-2024,13:00,16:00,Sky-Radio,Sky,Weekend Hits,
+03-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+03-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+03-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+03-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+03-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+04-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+04-02-2024,09:00,13:00,Sky-Radio,Sky,Non Stop,
+04-02-2024,13:00,16:00,Sky-Radio,Sky,Weekend Hits,
+04-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+04-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+04-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+04-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+04-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+05-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+05-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+05-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+05-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+05-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+05-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+05-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+05-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+05-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+06-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+06-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+06-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+06-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+06-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+06-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+06-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+06-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+06-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+07-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+07-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+07-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+07-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+07-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+07-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+07-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+07-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+07-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+08-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+08-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+08-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+08-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+08-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+08-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+08-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+08-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+08-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+09-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+09-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+09-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+09-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+09-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+09-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+09-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+09-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+09-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+10-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+10-02-2024,09:00,18:00,Sky-Radio,Sky,Valentijn Top 500,dag 1 van 5
+10-02-2024,18:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+10-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+10-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+10-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+10-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+11-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+11-02-2024,09:00,18:00,Sky-Radio,Sky,Valentijn Top 500,dag 2 van 5
+11-02-2024,18:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+11-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+11-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+11-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+11-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+12-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+12-02-2024,09:00,18:00,Sky-Radio,Sky,Valentijn Top 500,dag 3 van 5
+12-02-2024,18:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+12-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+12-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+12-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+12-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+13-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+13-02-2024,09:00,18:00,Sky-Radio,Sky,Valentijn Top 500,dag 4 van 5
+13-02-2024,18:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+13-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+13-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+13-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+13-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+14-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+14-02-2024,09:00,18:00,Sky-Radio,Sky,Valentijn Top 500,dag 5 van 5
+14-02-2024,18:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+14-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+14-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+14-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+14-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+15-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+15-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+15-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+15-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+15-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+15-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+15-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+15-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+15-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+16-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+16-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+16-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+16-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+16-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+16-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+16-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+16-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+16-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+17-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+17-02-2024,09:00,13:00,Sky-Radio,Sky,Nonstop Weekend,
+17-02-2024,13:00,16:00,Sky-Radio,Sky,Weekend Hits,
+17-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+17-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+17-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+17-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+17-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+18-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+18-02-2024,09:00,13:00,Sky-Radio,Sky,Non Stop,
+18-02-2024,13:00,16:00,Sky-Radio,Sky,Weekend Hits,
+18-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+18-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+18-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+18-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+18-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+19-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+19-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+19-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+19-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+19-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+19-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+19-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+19-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+19-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+20-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+20-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+20-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+20-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+20-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+20-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+20-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+20-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+20-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+21-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+21-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+21-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+21-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+21-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+21-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+21-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+21-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+21-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+22-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+22-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+22-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+22-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+22-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+22-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+22-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+22-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+22-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+23-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+23-02-2024,09:00,09:30,Sky-Radio,Sky,Top 5 Over 9,
+23-02-2024,09:30,13:00,Sky-Radio,Sky,Nonstop @Work,
+23-02-2024,13:00,16:00,Sky-Radio,Sky,Non Stop,
+23-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+23-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+23-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+23-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+23-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+24-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+24-02-2024,09:00,13:00,Sky-Radio,Sky,Nonstop Weekend,
+24-02-2024,13:00,16:00,Sky-Radio,Sky,Weekend Hits,
+24-02-2024,16:00,19:00,Sky-Radio,Sky,Feel Good Afternoon,
+24-02-2024,19:00,22:00,Sky-Radio,Sky,Feel Good Evening,
+24-02-2024,22:00,00:00,Sky-Radio,Sky,Lovesongs,
+24-02-2024,00:00,05:00,Sky-Radio,Sky,@Night,
+24-02-2024,05:00,09:00,Sky-Radio,Sky,Nonstop Music Morning Show,
+01-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+01-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+01-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+01-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+01-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+01-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+01-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+01-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+01-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+02-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+02-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+02-02-2024,11:00,12:00,Qmusic,Q,Menno Barreveld,
+02-02-2024,12:00,14:00,Qmusic,Q,Wim van Helden,
+02-02-2024,14:00,18:00,Qmusic,Q,Top 40,
+02-02-2024,18:00,19:00,Qmusic,Q,Het Foute Uur,
+02-02-2024,19:00,21:00,Qmusic,Q,Tom & Bram,
+02-02-2024,21:00,00:00,Qmusic,Q,Stephan Bouwman,
+02-02-2024,00:00,02:00,Qmusic,Q,Cain Slobbe,
+02-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+03-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+03-02-2024,07:00,10:00,Qmusic,Q,Bas van Nimwegen,
+03-02-2024,10:00,12:00,Qmusic,Q,Kimberley Dekker,
+03-02-2024,12:00,15:00,Qmusic,Q,Tom & Bram,
+03-02-2024,15:00,18:00,Qmusic,Q,Top 40,
+03-02-2024,18:00,21:00,Qmusic,Q,Top 40 Awards Live,
+03-02-2024,21:00,00:00,Qmusic,Q,Top 40 Awards Live,
+03-02-2024,00:00,01:00,Qmusic,Q,Maximum Weekend Mix,
+03-02-2024,01:00,02:00,Qmusic,Q,Lost Radio,
+03-02-2024,02:00,03:00,Qmusic,Q,Beste Van Tomorrowland One World Radio,
+03-02-2024,03:00,07:00,Qmusic,Q,Qmusic,
+04-02-2024,03:00,07:00,Qmusic,Q,Qmusic,
+04-02-2024,07:00,10:00,Qmusic,Q,Bas van Nimwegen,
+04-02-2024,10:00,12:00,Qmusic,Q,Stephan Bouwman,
+04-02-2024,12:00,15:00,Qmusic,Q,Tom & Bram,
+04-02-2024,15:00,18:00,Qmusic,Q,Stephan Bouwman,
+04-02-2024,18:00,21:00,Qmusic,Q,Joey van der Velden,
+04-02-2024,21:00,00:00,Qmusic,Q,Edwin Noorlander,
+04-02-2024,00:00,02:00,Qmusic,Q,Cain Slobbe,
+04-02-2024,02:00,06:00,Qmusic,Q,Qmusic,
+05-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+05-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+05-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+05-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+05-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+05-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+05-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+05-02-2024,01:00,03:00,Qmusic,Q,Mattis Janssen,
+05-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+06-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+06-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+06-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+06-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+06-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+06-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+06-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+06-02-2024,01:00,03:00,Qmusic,Q,Mattis Janssen,
+06-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+07-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+07-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+07-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+07-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+07-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+07-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+07-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+07-02-2024,01:00,03:00,Qmusic,Q,Mattis Janssen,
+07-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+08-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+08-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+08-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+08-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+08-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+08-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+08-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+08-02-2024,01:00,03:00,Qmusic,Q,Mattis Janssen,
+08-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+09-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+09-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+09-02-2024,11:00,12:00,Qmusic,Q,Menno Barreveld,
+09-02-2024,12:00,14:00,Qmusic,Q,Wim van Helden,
+09-02-2024,14:00,18:00,Qmusic,Q,Top 40,
+09-02-2024,18:00,19:00,Qmusic,Q,Het Foute Uur,
+09-02-2024,19:00,21:00,Qmusic,Q,Lars Boele,
+09-02-2024,21:00,00:00,Qmusic,Q,Stephan Bouwman,
+09-02-2024,00:00,02:00,Qmusic,Q,Cain Slobbe,
+09-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+10-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+10-02-2024,07:00,10:00,Qmusic,Q,Bas van Nimwegen,
+10-02-2024,10:00,12:00,Qmusic,Q,Vincent Pronk,
+10-02-2024,12:00,15:00,Qmusic,Q,Lars Boele,
+10-02-2024,15:00,18:00,Qmusic,Q,Top 40,
+10-02-2024,18:00,19:00,Qmusic,Q,Het Foute Uur,
+10-02-2024,19:00,21:00,Qmusic,Q,Joey van der Velden,
+10-02-2024,21:00,22:00,Qmusic,Q,Kris Kross Amsterdam,
+10-02-2024,22:00,00:00,Qmusic,Q,Worldwide Club 20,
+10-02-2024,00:00,01:00,Qmusic,Q,Maximum Weekend Mix,
+10-02-2024,01:00,02:00,Qmusic,Q,Lost Radio,
+10-02-2024,02:00,03:00,Qmusic,Q,Beste Van Tomorrowland One World Radio,
+10-02-2024,03:00,07:00,Qmusic,Q,Qmusic,
+11-02-2024,03:00,07:00,Qmusic,Q,Qmusic,
+11-02-2024,07:00,10:00,Qmusic,Q,Bas van Nimwegen,
+11-02-2024,10:00,12:00,Qmusic,Q,Vincent Pronk,
+11-02-2024,12:00,15:00,Qmusic,Q,Lars Boele,
+11-02-2024,15:00,18:00,Qmusic,Q,Stephan Bouwman,
+11-02-2024,18:00,21:00,Qmusic,Q,Joey van der Velden,
+11-02-2024,21:00,00:00,Qmusic,Q,Edwin Noorlander,
+11-02-2024,00:00,02:00,Qmusic,Q,Cain Slobbe,
+11-02-2024,02:00,06:00,Qmusic,Q,Qmusic,
+12-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+12-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+12-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+12-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+12-02-2024,16:00,19:00,Qmusic,Q,Joost Swinkels,
+12-02-2024,19:00,22:00,Qmusic,Q,Joey van der Velden,
+12-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+12-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+12-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+13-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+13-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+13-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+13-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+13-02-2024,16:00,19:00,Qmusic,Q,Joost Swinkels,
+13-02-2024,19:00,22:00,Qmusic,Q,Tom van der Weerd,
+13-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+13-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+13-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+14-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+14-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+14-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+14-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+14-02-2024,16:00,19:00,Qmusic,Q,Joost Swinkels,
+14-02-2024,19:00,22:00,Qmusic,Q,Tom van der Weerd,
+14-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+14-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+14-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+15-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+15-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+15-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+15-02-2024,13:00,16:00,Qmusic,Q,Wim van Helden,
+15-02-2024,16:00,19:00,Qmusic,Q,Joost Swinkels,
+15-02-2024,19:00,22:00,Qmusic,Q,Tom van der Weerd,
+15-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+15-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+15-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+16-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+16-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+16-02-2024,11:00,12:00,Qmusic,Q,Menno Barreveld,
+16-02-2024,12:00,14:00,Qmusic,Q,Bas van Nimwegen,
+16-02-2024,14:00,18:00,Qmusic,Q,Top 40,
+16-02-2024,18:00,19:00,Qmusic,Q,Het Foute Uur,
+16-02-2024,19:00,21:00,Qmusic,Q,Tom & Bram,
+16-02-2024,21:00,00:00,Qmusic,Q,Stephan Bouwman,
+16-02-2024,00:00,02:00,Qmusic,Q,Cain Slobbe,
+16-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+17-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+17-02-2024,07:00,10:00,Qmusic,Q,Bas van Nimwegen,
+17-02-2024,10:00,12:00,Qmusic,Q,Vincent Pronk,
+17-02-2024,12:00,15:00,Qmusic,Q,Tom & Bram,
+17-02-2024,15:00,18:00,Qmusic,Q,Top 40,
+17-02-2024,18:00,19:00,Qmusic,Q,Het Foute Uur,
+17-02-2024,19:00,21:00,Qmusic,Q,Joey van der Velden,
+17-02-2024,21:00,22:00,Qmusic,Q,Kris Kross Amsterdam,
+17-02-2024,22:00,00:00,Qmusic,Q,Worldwide Club 20,
+17-02-2024,00:00,01:00,Qmusic,Q,Maximum Weekend Mix,
+17-02-2024,01:00,02:00,Qmusic,Q,Lost Radio,
+17-02-2024,02:00,03:00,Qmusic,Q,Beste Van Tomorrowland One World Radio,
+17-02-2024,03:00,07:00,Qmusic,Q,Qmusic,
+18-02-2024,03:00,07:00,Qmusic,Q,Qmusic,
+18-02-2024,07:00,10:00,Qmusic,Q,Edwin Noorlander,
+18-02-2024,10:00,12:00,Qmusic,Q,Vincent Pronk,
+18-02-2024,12:00,15:00,Qmusic,Q,Tom & Bram,
+18-02-2024,15:00,18:00,Qmusic,Q,Stephan Bouwman,
+18-02-2024,18:00,21:00,Qmusic,Q,Joey van der Velden,
+18-02-2024,21:00,00:00,Qmusic,Q,Edwin Noorlander,
+18-02-2024,00:00,02:00,Qmusic,Q,Cain Slobbe,
+18-02-2024,02:00,06:00,Qmusic,Q,Qmusic,
+19-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+19-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+19-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+19-02-2024,13:00,16:00,Qmusic,Q,Bas van Nimwegen,
+19-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+19-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+19-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+19-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+19-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+20-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+20-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+20-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+20-02-2024,13:00,16:00,Qmusic,Q,Bas van Nimwegen,
+20-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+20-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+20-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+20-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+20-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+21-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+21-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+21-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+21-02-2024,13:00,16:00,Qmusic,Q,Bas van Nimwegen,
+21-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+21-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+21-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+21-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+21-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+22-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+22-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+22-02-2024,11:00,13:00,Qmusic,Q,Menno Barreveld,
+22-02-2024,13:00,16:00,Qmusic,Q,Bas van Nimwegen,
+22-02-2024,16:00,19:00,Qmusic,Q,Domien Verschuuren,
+22-02-2024,19:00,22:00,Qmusic,Q,Joost Swinkels,
+22-02-2024,22:00,01:00,Qmusic,Q,Lars Boele,
+22-02-2024,01:00,03:00,Qmusic,Q,Judith Eijk,
+22-02-2024,03:00,06:00,Qmusic,Q,Qmusic,
+23-02-2024,06:00,10:00,Qmusic,Q,Mattie & Marieke,
+23-02-2024,10:00,11:00,Qmusic,Q,Het Foute Uur,
+23-02-2024,11:00,14:00,Qmusic,Q,Menno Barreveld,
+23-02-2024,14:00,18:00,Qmusic,Q,Top 40,
+23-02-2024,18:00,19:00,Qmusic,Q,Het Foute Uur,
+23-02-2024,19:00,21:00,Qmusic,Q,Tom & Bram,
+23-02-2024,21:00,00:00,Qmusic,Q,Stephan Bouwman,
+23-02-2024,00:00,02:00,Qmusic,Q,Cain Slobbe,
+23-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+24-02-2024,02:00,07:00,Qmusic,Q,Qmusic,
+24-02-2024,07:00,10:00,Qmusic,Q,Bas van Nimwegen,
+24-02-2024,10:00,12:00,Qmusic,Q,Vincent Pronk,
+24-02-2024,12:00,15:00,Qmusic,Q,Tom & Bram,
+24-02-2024,15:00,18:00,Qmusic,Q,Top 40,
+24-02-2024,18:00,19:00,Qmusic,Q,Het Foute Uur,
+24-02-2024,19:00,21:00,Qmusic,Q,Joey van der Velden,
+24-02-2024,21:00,22:00,Qmusic,Q,Kris Kross Amsterdam,
+24-02-2024,22:00,00:00,Qmusic,Q,Worldwide Club 20,
+24-02-2024,00:00,01:00,Qmusic,Q,Maximum Weekend Mix,
+24-02-2024,01:00,02:00,Qmusic,Q,Lost Radio,
+24-02-2024,02:00,03:00,Qmusic,Q,Beste Van Tomorrowland One World Radio,
+24-02-2024,03:00,07:00,Qmusic,Q,Qmusic,
+01-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+01-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+01-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+01-02-2024,14:00,16:00,Radio-Veronica,Veronica,De Bonanza,
+01-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+01-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+01-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+01-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+01-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+01-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+01-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+02-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+02-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+02-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+02-02-2024,14:00,16:00,Radio-Veronica,Veronica,De Bonanza,
+02-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+02-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+02-02-2024,19:00,21:00,Radio-Veronica,Veronica,Jannes Drop,
+02-02-2024,21:00,00:00,Radio-Veronica,Veronica,Ferry Oomen,
+02-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+02-02-2024,01:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+03-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Hier Goeiemorgen,
+03-02-2024,09:00,12:00,Radio-Veronica,Veronica,Verschuurens Goud van Oud,
+03-02-2024,12:00,15:00,Radio-Veronica,Veronica,WeekendRick,
+03-02-2024,15:00,18:00,Radio-Veronica,Veronica,Jordi Mulderij,
+03-02-2024,18:00,20:00,Radio-Veronica,Veronica,Ed Struijlaart,
+03-02-2024,20:00,22:00,Radio-Veronica,Veronica,Vera’s Vintage Vibes,
+03-02-2024,22:00,00:00,Radio-Veronica,Veronica,Veronica Anthems,
+03-02-2024,00:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+04-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Hier Goeiemorgen,
+04-02-2024,09:00,12:00,Radio-Veronica,Veronica,Verschuurens Goud van Oud,
+04-02-2024,12:00,15:00,Radio-Veronica,Veronica,WeekendRick,
+04-02-2024,15:00,18:00,Radio-Veronica,Veronica,Jordi Mulderij,
+04-02-2024,18:00,20:00,Radio-Veronica,Veronica,Ed Struijlaart,
+04-02-2024,20:00,22:00,Radio-Veronica,Veronica,The 70s & 80s Files,
+04-02-2024,22:00,00:00,Radio-Veronica,Veronica,Veronica Anthems,
+04-02-2024,00:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+04-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+05-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+05-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+05-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+05-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+05-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+05-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+05-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+05-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+05-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+05-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+05-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+06-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+06-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+06-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+06-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+06-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+06-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+06-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+06-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+06-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+06-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+06-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+07-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+07-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+07-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+07-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+07-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+07-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+07-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+07-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+07-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+07-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+07-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+08-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+08-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+08-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+08-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+08-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+08-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+08-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+08-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+08-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+08-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+08-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+09-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+09-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+09-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+09-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+09-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+09-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+09-02-2024,19:00,21:00,Radio-Veronica,Veronica,Jannes Drop,
+09-02-2024,21:00,00:00,Radio-Veronica,Veronica,Ferry Oomen,
+09-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+09-02-2024,01:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+10-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Hier Goeiemorgen,
+10-02-2024,09:00,12:00,Radio-Veronica,Veronica,Verschuurens Goud van Oud,
+10-02-2024,12:00,15:00,Radio-Veronica,Veronica,WeekendRick,
+10-02-2024,15:00,18:00,Radio-Veronica,Veronica,Ferry Oomen,
+10-02-2024,18:00,20:00,Radio-Veronica,Veronica,Ed Struijlaart,
+10-02-2024,20:00,22:00,Radio-Veronica,Veronica,Vera’s Vintage Vibes,
+10-02-2024,22:00,00:00,Radio-Veronica,Veronica,Veronica Anthems,
+10-02-2024,00:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+11-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Hier Goeiemorgen,
+11-02-2024,09:00,12:00,Radio-Veronica,Veronica,Verschuurens Goud van Oud,
+11-02-2024,12:00,15:00,Radio-Veronica,Veronica,WeekendRick,
+11-02-2024,15:00,18:00,Radio-Veronica,Veronica,Ferry Oomen,
+11-02-2024,18:00,20:00,Radio-Veronica,Veronica,Ed Struijlaart,
+11-02-2024,20:00,22:00,Radio-Veronica,Veronica,The 70s & 80s Files,
+11-02-2024,22:00,00:00,Radio-Veronica,Veronica,Veronica Anthems,
+11-02-2024,00:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+11-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+12-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+12-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+12-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+12-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+12-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+12-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+12-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+12-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+12-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+12-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+12-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+13-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+13-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+13-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+13-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+13-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+13-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+13-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+13-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+13-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+13-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+13-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+14-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+14-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+14-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+14-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+14-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+14-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+14-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+14-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+14-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+14-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+14-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+15-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+15-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+15-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+15-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+15-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+15-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+15-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+15-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+15-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+15-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+15-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+16-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+16-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+16-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+16-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+16-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+16-02-2024,18:00,21:00,Radio-Veronica,Veronica,Jannes Drop,
+16-02-2024,21:00,00:00,Radio-Veronica,Veronica,Ferry Oomen,
+16-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+16-02-2024,01:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+17-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Hier Goeiemorgen,
+17-02-2024,09:00,12:00,Radio-Veronica,Veronica,Verschuurens Goud van Oud,
+17-02-2024,12:00,15:00,Radio-Veronica,Veronica,WeekendRick,
+17-02-2024,15:00,18:00,Radio-Veronica,Veronica,Jordi Mulderij,
+17-02-2024,18:00,20:00,Radio-Veronica,Veronica,Ed Struijlaart,
+17-02-2024,20:00,22:00,Radio-Veronica,Veronica,The 70s & 80s Files,
+17-02-2024,22:00,00:00,Radio-Veronica,Veronica,Veronica Anthems,
+17-02-2024,00:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+18-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Hier Goeiemorgen,
+18-02-2024,09:00,12:00,Radio-Veronica,Veronica,Verschuurens Goud van Oud,
+18-02-2024,12:00,15:00,Radio-Veronica,Veronica,WeekendRick,
+18-02-2024,15:00,18:00,Radio-Veronica,Veronica,Jordi Mulderij,
+18-02-2024,18:00,20:00,Radio-Veronica,Veronica,Ed Struijlaart,
+18-02-2024,20:00,22:00,Radio-Veronica,Veronica,Vera’s Vintage Vibes,
+18-02-2024,22:00,00:00,Radio-Veronica,Veronica,Veronica Anthems,
+18-02-2024,00:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+18-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+19-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+19-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+19-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+19-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+19-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+19-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+19-02-2024,19:00,21:00,Radio-Veronica,Veronica,Jordi Mulderij,
+19-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+19-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+19-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+19-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+20-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+20-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+20-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+20-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+20-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+20-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+20-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+20-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+20-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+20-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+20-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+21-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+21-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+21-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+21-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+21-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+21-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+21-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+21-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+21-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+21-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+21-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+22-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+22-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+22-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+22-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+22-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+22-02-2024,18:00,19:00,Radio-Veronica,Veronica,Veronica Anthems,
+22-02-2024,19:00,21:00,Radio-Veronica,Veronica,Herman Hofman,
+22-02-2024,21:00,00:00,Radio-Veronica,Veronica,Willem Doreleijers,
+22-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+22-02-2024,01:00,05:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+22-02-2024,05:00,06:00,Radio-Veronica,Veronica,The Warming Up,
+23-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Goeiemorgen,
+23-02-2024,09:00,12:00,Radio-Veronica,Veronica,Goud van Oud,
+23-02-2024,12:00,14:00,Radio-Veronica,Veronica,Frank op Veronica,
+23-02-2024,14:00,16:00,Radio-Veronica,Veronica,Niek van der Bruggen,
+23-02-2024,16:00,18:00,Radio-Veronica,Veronica,De Veronica Middagshow,
+23-02-2024,18:00,21:00,Radio-Veronica,Veronica,Jannes Drop,
+23-02-2024,21:00,00:00,Radio-Veronica,Veronica,Ferry Oomen,
+23-02-2024,00:00,01:00,Radio-Veronica,Veronica,Muziek Voor Volwassenen,
+23-02-2024,01:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+24-02-2024,06:00,09:00,Radio-Veronica,Veronica,Ook Hier Goeiemorgen,
+24-02-2024,09:00,12:00,Radio-Veronica,Veronica,Verschuurens Goud van Oud,
+24-02-2024,12:00,15:00,Radio-Veronica,Veronica,WeekendRick,
+24-02-2024,15:00,18:00,Radio-Veronica,Veronica,Jordi Mulderij,
+24-02-2024,18:00,20:00,Radio-Veronica,Veronica,Ed Struijlaart,
+24-02-2024,20:00,22:00,Radio-Veronica,Veronica,The 70s & 80s Files,
+24-02-2024,22:00,00:00,Radio-Veronica,Veronica,Veronica Anthems,
+24-02-2024,00:00,06:00,Radio-Veronica,Veronica,Oh Wat Een Nacht,
+01-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+01-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+01-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+01-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+01-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+01-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+01-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+01-02-2024,03:00,05:00,Radio-538,538,Marnix Westhuis,
+01-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+02-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+02-02-2024,10:00,12:00,Radio-538,538,Lindo Duvall,
+02-02-2024,12:00,14:00,Radio-538,538,Jordi Warners,
+02-02-2024,14:00,18:00,Radio-538,538,Evers & Co,
+02-02-2024,18:00,21:00,Radio-538,538,Bas & Dylan,
+02-02-2024,21:00,22:00,Radio-538,538,Weekendmix,
+02-02-2024,22:00,23:00,Radio-538,538,The Martin Garrix Radio Show,
+02-02-2024,23:00,00:00,Radio-538,538,Sunnery & Ryan,
+02-02-2024,00:00,01:00,Radio-538,538,Skyline Sessions,
+02-02-2024,01:00,02:00,Radio-538,538,David Guetta Radio Show,
+02-02-2024,02:00,03:00,Radio-538,538,Hardwell On Air,
+02-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+03-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+03-02-2024,07:00,09:00,Radio-538,538,Julia van Reyendam,
+03-02-2024,09:00,12:00,Radio-538,538,Het Beste van De 538 Ochtendshow,
+03-02-2024,12:00,15:00,Radio-538,538,Jordi Warners,
+03-02-2024,15:00,18:00,Radio-538,538,Top 50,
+03-02-2024,18:00,19:00,Radio-538,538,Hotline,
+03-02-2024,19:00,21:00,Radio-538,538,Global Dance Chart,
+03-02-2024,21:00,00:00,Radio-538,538,Dance Department,
+03-02-2024,00:00,01:00,Radio-538,538,Club Life,
+03-02-2024,01:00,03:00,Radio-538,538,A State Of Trance,
+03-02-2024,03:00,04:00,Radio-538,538,Jacked,
+03-02-2024,04:00,07:00,Radio-538,538,53N8 Non-Stop,
+04-02-2024,04:00,07:00,Radio-538,538,53N8 Non-Stop,
+04-02-2024,07:00,09:00,Radio-538,538,Julia van Reyendam,
+04-02-2024,09:00,12:00,Radio-538,538,Het Beste Van Evers & Co,
+04-02-2024,12:00,15:00,Radio-538,538,Jordi Warners,
+04-02-2024,15:00,18:00,Radio-538,538,Dylan Boet,
+04-02-2024,18:00,21:00,Radio-538,538,Julia van Reyendam,
+04-02-2024,21:00,00:00,Radio-538,538,Marnix Westhuis,
+04-02-2024,00:00,03:00,Radio-538,538,Danny Blom,
+04-02-2024,03:00,05:00,Radio-538,538,Kylian van Luijt,
+04-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+05-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+05-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+05-02-2024,13:00,16:00,Radio-538,538,Martijn La Grouw,
+05-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+05-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+05-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+05-02-2024,00:00,03:00,Radio-538,538,Danny Blom,
+05-02-2024,03:00,05:00,Radio-538,538,Kylian van Luijt,
+05-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+06-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+06-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+06-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+06-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+06-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+06-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+06-02-2024,00:00,03:00,Radio-538,538,Danny Blom,
+06-02-2024,03:00,05:00,Radio-538,538,Kylian van Luijt,
+06-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+07-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+07-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+07-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+07-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+07-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+07-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+07-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+07-02-2024,03:00,05:00,Radio-538,538,Marnix Westhuis,
+07-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+08-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+08-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+08-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+08-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+08-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+08-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+08-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+08-02-2024,03:00,05:00,Radio-538,538,Marnix Westhuis,
+08-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+09-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+09-02-2024,10:00,12:00,Radio-538,538,Lindo Duvall,
+09-02-2024,12:00,14:00,Radio-538,538,Jordi Warners,
+09-02-2024,14:00,18:00,Radio-538,538,Evers & Co,
+09-02-2024,18:00,21:00,Radio-538,538,Bas & Dylan,
+09-02-2024,21:00,22:00,Radio-538,538,Weekendmix,
+09-02-2024,22:00,23:00,Radio-538,538,The Martin Garrix Radio Show,
+09-02-2024,23:00,00:00,Radio-538,538,Sunnery & Ryan,
+09-02-2024,00:00,01:00,Radio-538,538,Skyline Sessions,
+09-02-2024,01:00,02:00,Radio-538,538,David Guetta Radio Show,
+09-02-2024,02:00,03:00,Radio-538,538,Weekendmix,
+09-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+10-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+10-02-2024,07:00,09:00,Radio-538,538,Julia van Reyendam,
+10-02-2024,09:00,12:00,Radio-538,538,Het Beste van De 538 Ochtendshow,
+10-02-2024,12:00,15:00,Radio-538,538,Jordi Warners,
+10-02-2024,15:00,18:00,Radio-538,538,Top 50,
+10-02-2024,18:00,19:00,Radio-538,538,Hotline,
+10-02-2024,19:00,21:00,Radio-538,538,Global Dance Chart,
+10-02-2024,21:00,00:00,Radio-538,538,Dance Department,
+10-02-2024,00:00,01:00,Radio-538,538,Club Life,
+10-02-2024,01:00,03:00,Radio-538,538,A State Of Trance,
+10-02-2024,03:00,04:00,Radio-538,538,Jacked,
+10-02-2024,04:00,07:00,Radio-538,538,53N8 Non-Stop,
+11-02-2024,04:00,07:00,Radio-538,538,53N8 Non-Stop,
+11-02-2024,07:00,09:00,Radio-538,538,Julia van Reyendam,
+11-02-2024,09:00,12:00,Radio-538,538,Het Beste Van Evers & Co,
+11-02-2024,12:00,15:00,Radio-538,538,Jordi Warners,
+11-02-2024,15:00,18:00,Radio-538,538,Dylan Boet,
+11-02-2024,18:00,21:00,Radio-538,538,Julia van Reyendam,
+11-02-2024,21:00,00:00,Radio-538,538,Marnix Westhuis,
+11-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+11-02-2024,03:00,05:00,Radio-538,538,53N8 Non Stop,
+11-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+12-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+12-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+12-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+12-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+12-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+12-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+12-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+12-02-2024,03:00,05:00,Radio-538,538,53N8 Non Stop,
+12-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+13-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+13-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+13-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+13-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+13-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+13-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+13-02-2024,00:00,03:00,Radio-538,538,Danny,
+13-02-2024,03:00,05:00,Radio-538,538,Kylian van Luijt,
+13-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+14-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+14-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+14-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+14-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+14-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+14-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+14-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+14-02-2024,03:00,05:00,Radio-538,538,Marnix Westhuis,
+14-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+15-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+15-02-2024,10:00,13:00,Radio-538,538,Lindo Duvall,
+15-02-2024,13:00,16:00,Radio-538,538,Mark Labrand,
+15-02-2024,16:00,19:00,Radio-538,538,De 538 Middagshow,
+15-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+15-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+15-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+15-02-2024,03:00,05:00,Radio-538,538,Marnix Westhuis,
+15-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+16-02-2024,06:00,10:00,Radio-538,538,De 538 Ochtendshow,
+16-02-2024,10:00,12:00,Radio-538,538,Lindo Duvall,
+16-02-2024,12:00,14:00,Radio-538,538,Jordi Warners,
+16-02-2024,14:00,18:00,Radio-538,538,Evers & Co,
+16-02-2024,18:00,21:00,Radio-538,538,Bas & Dylan,
+16-02-2024,21:00,22:00,Radio-538,538,Weekendmix,
+16-02-2024,22:00,23:00,Radio-538,538,The Martin Garrix Radio Show,
+16-02-2024,23:00,00:00,Radio-538,538,Sunnery & Ryan,
+16-02-2024,00:00,01:00,Radio-538,538,Skyline Sessions,
+16-02-2024,01:00,02:00,Radio-538,538,David Guetta Radio Show,
+16-02-2024,02:00,03:00,Radio-538,538,Weekendmix,
+16-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+17-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+17-02-2024,07:00,09:00,Radio-538,538,Julia van Reyendam,
+17-02-2024,09:00,12:00,Radio-538,538,Het Beste van De 538 Ochtendshow,
+17-02-2024,12:00,15:00,Radio-538,538,90’s Top 750,dag 1 van 7
+17-02-2024,15:00,18:00,Radio-538,538,90’s Top 750,dag 1 van 7
+17-02-2024,18:00,19:00,Radio-538,538,90’s Top 750,dag 1 van 7
+17-02-2024,19:00,21:00,Radio-538,538,Global Dance Chart,
+17-02-2024,21:00,00:00,Radio-538,538,Dance Department,
+17-02-2024,00:00,01:00,Radio-538,538,Club Life,
+17-02-2024,01:00,03:00,Radio-538,538,A State Of Trance,
+17-02-2024,03:00,04:00,Radio-538,538,Jacked,
+17-02-2024,04:00,07:00,Radio-538,538,53N8 Non-Stop,
+18-02-2024,04:00,07:00,Radio-538,538,53N8 Non-Stop,
+18-02-2024,07:00,09:00,Radio-538,538,Julia van Reyendam,
+18-02-2024,09:00,12:00,Radio-538,538,Het Beste Van Evers & Co,
+18-02-2024,12:00,15:00,Radio-538,538,90’s Top 750,dag 2 van 7
+18-02-2024,15:00,18:00,Radio-538,538,90’s Top 750,dag 2 van 7
+18-02-2024,18:00,19:00,Radio-538,538,90’s Top 750,dag 2 van 7
+18-02-2024,19:00,21:00,Radio-538,538,Julia van Reyendam,
+18-02-2024,21:00,00:00,Radio-538,538,Marnix Westhuis,
+18-02-2024,00:00,03:00,Radio-538,538,Danny Blom,
+18-02-2024,03:00,05:00,Radio-538,538,53N8 Non Stop,
+18-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+19-02-2024,06:00,07:00,Radio-538,538,De 538 Ochtendshow,
+19-02-2024,07:00,10:00,Radio-538,538,90’s Top 750,dag 3 van 7
+19-02-2024,10:00,13:00,Radio-538,538,90’s Top 750,dag 3 van 7
+19-02-2024,13:00,16:00,Radio-538,538,90’s Top 750,dag 3 van 7
+19-02-2024,16:00,18:00,Radio-538,538,90’s Top 750,dag 3 van 7
+19-02-2024,18:00,19:00,Radio-538,538,De 538 Middagshow,
+19-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+19-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+19-02-2024,00:00,03:00,Radio-538,538,Danny Blom,
+19-02-2024,03:00,05:00,Radio-538,538,Kylian van Luijt,
+19-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+20-02-2024,06:00,07:00,Radio-538,538,De 538 Ochtendshow,
+20-02-2024,07:00,10:00,Radio-538,538,90’s Top 750,dag 4 van 7
+20-02-2024,10:00,13:00,Radio-538,538,90’s Top 750,dag 4 van 7
+20-02-2024,13:00,16:00,Radio-538,538,90’s Top 750,dag 4 van 7
+20-02-2024,16:00,18:00,Radio-538,538,90’s Top 750,dag 4 van 7
+20-02-2024,18:00,19:00,Radio-538,538,De 538 Middagshow,
+20-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+20-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+20-02-2024,00:00,03:00,Radio-538,538,Danny Blom,
+20-02-2024,03:00,05:00,Radio-538,538,Kylian van Luijt,
+20-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+21-02-2024,06:00,07:00,Radio-538,538,De 538 Ochtendshow,
+21-02-2024,07:00,10:00,Radio-538,538,90’s Top 750,dag 5 van 7
+21-02-2024,10:00,13:00,Radio-538,538,90’s Top 750,dag 5 van 7
+21-02-2024,13:00,16:00,Radio-538,538,90’s Top 750,dag 5 van 7
+21-02-2024,16:00,18:00,Radio-538,538,90’s Top 750,dag 5 van 7
+21-02-2024,18:00,19:00,Radio-538,538,De 538 Middagshow,
+21-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+21-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+21-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+21-02-2024,03:00,05:00,Radio-538,538,Marnix Westhuis,
+21-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+22-02-2024,06:00,07:00,Radio-538,538,De 538 Ochtendshow,
+22-02-2024,07:00,10:00,Radio-538,538,90’s Top 750,dag 6 van 7
+22-02-2024,10:00,13:00,Radio-538,538,90’s Top 750,dag 6 van 7
+22-02-2024,13:00,16:00,Radio-538,538,90’s Top 750,dag 6 van 7
+22-02-2024,16:00,18:00,Radio-538,538,90’s Top 750,dag 6 van 7
+22-02-2024,18:00,19:00,Radio-538,538,De 538 Middagshow,
+22-02-2024,19:00,21:00,Radio-538,538,Martijn La Grouw,
+22-02-2024,21:00,00:00,Radio-538,538,Bas & Dylan,
+22-02-2024,00:00,03:00,Radio-538,538,Kylian van Luijt,
+22-02-2024,03:00,05:00,Radio-538,538,Marnix Westhuis,
+22-02-2024,05:00,06:00,Radio-538,538,De 538 Ochtendshow,
+23-02-2024,06:00,07:00,Radio-538,538,De 538 Ochtendshow,
+23-02-2024,07:00,10:00,Radio-538,538,90’s Top 750,dag 7 van 7
+23-02-2024,10:00,12:00,Radio-538,538,90’s Top 750,dag 7 van 7
+23-02-2024,12:00,14:00,Radio-538,538,90’s Top 750,dag 7 van 7
+23-02-2024,14:00,18:00,Radio-538,538,Evers & Co,
+23-02-2024,18:00,21:00,Radio-538,538,Bas & Dylan,
+23-02-2024,21:00,22:00,Radio-538,538,Weekendmix,
+23-02-2024,22:00,23:00,Radio-538,538,The Martin Garrix Radio Show,
+23-02-2024,23:00,00:00,Radio-538,538,Sunnery & Ryan,
+23-02-2024,00:00,01:00,Radio-538,538,Skyline Sessions,
+23-02-2024,01:00,02:00,Radio-538,538,David Guetta Radio Show,
+23-02-2024,02:00,03:00,Radio-538,538,Weekendmix,
+23-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+24-02-2024,03:00,07:00,Radio-538,538,53N8 Non-Stop,
+24-02-2024,07:00,09:00,Radio-538,538,Marnix Westhuis,
+24-02-2024,09:00,12:00,Radio-538,538,90’s Top 750 - Top 100,
+24-02-2024,12:00,15:00,Radio-538,538,90’s Top 750 - Top 100,
+24-02-2024,15:00,18:00,Radio-538,538,90’s Top 750 - Top 100,
+24-02-2024,18:00,19:00,Radio-538,538,Hotline,
+24-02-2024,19:00,21:00,Radio-538,538,Global Dance Chart,
+24-02-2024,21:00,00:00,Radio-538,538,Dance Department,
+24-02-2024,00:00,01:00,Radio-538,538,Club Life,
+24-02-2024,01:00,03:00,Radio-538,538,A State Of Trance,
+24-02-2024,03:00,04:00,Radio-538,538,Jacked,
+24-02-2024,04:00,07:00,Radio-538,538,53N8 Non-Stop,
+01-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+01-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+01-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+01-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+01-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+01-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+01-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+01-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+01-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+01-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+02-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+02-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+02-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+02-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+02-02-2024,16:00,18:00,NPO-Radio-2,2,Keur In De Middag,PowNed
+02-02-2024,18:00,20:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+02-02-2024,20:00,22:00,NPO-Radio-2,2,Het Platenpaleis,bnnvara
+02-02-2024,22:00,00:00,NPO-Radio-2,2,Club Staverman,kro-ncrv
+02-02-2024,00:00,02:00,NPO-Radio-2,2,Eddy’s Nachtwacht,PowNed
+02-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+03-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+03-02-2024,07:00,10:00,NPO-Radio-2,2,Vroeg Pieken,kro-ncrv
+03-02-2024,10:00,12:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+03-02-2024,12:00,14:00,NPO-Radio-2,2,Spijkers met Koppen,bnnvara
+03-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+03-02-2024,16:00,18:00,NPO-Radio-2,2,Muziekcafé,AvroTros
+03-02-2024,18:00,21:00,NPO-Radio-2,2,Soul Night met Corné,AvroTros
+03-02-2024,21:00,00:00,NPO-Radio-2,2,Soul Night met Shay,bnnvara
+03-02-2024,00:00,07:00,NPO-Radio-2,2,Soul Night Dossier,
+04-02-2024,00:00,07:00,NPO-Radio-2,2,Soul Night Dossier,
+04-02-2024,07:00,10:00,NPO-Radio-2,2,Vroeg Pieken,kro-ncrv
+04-02-2024,10:00,12:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+04-02-2024,12:00,14:00,NPO-Radio-2,2,Het Platenpaleis,bnnvara
+04-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+04-02-2024,16:00,18:00,NPO-Radio-2,2,Martine In De Middag,EO
+04-02-2024,18:00,19:00,NPO-Radio-2,2,De Verrukkelijke 15,bnnvara
+04-02-2024,19:00,21:00,NPO-Radio-2,2,Blokhuis,bnnvara
+04-02-2024,21:00,00:00,NPO-Radio-2,2,De Albumshow,AvroTros
+04-02-2024,00:00,02:00,NPO-Radio-2,2,Van Inkels Choice,bnnvara
+04-02-2024,02:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+04-02-2024,04:00,06:00,NPO-Radio-2,2,Wildgroei,bnnvara
+05-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+05-02-2024,09:00,12:00,NPO-Radio-2,2,Top 80’s,dag 1 van 5
+05-02-2024,12:00,14:00,NPO-Radio-2,2,Top 80’s,dag 1 van 5
+05-02-2024,14:00,16:00,NPO-Radio-2,2,Top 80’s,dag 1 van 5
+05-02-2024,16:00,18:00,NPO-Radio-2,2,Top 80’s,dag 1 van 5
+05-02-2024,18:00,20:00,NPO-Radio-2,2,Top 80’s,dag 1 van 5
+05-02-2024,20:00,22:00,NPO-Radio-2,2,Top 80’s,dag 1 van 5
+05-02-2024,22:00,00:00,NPO-Radio-2,2,Top 80’s,dag 1 van 5
+05-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+05-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+06-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+06-02-2024,09:00,12:00,NPO-Radio-2,2,Top 80’s,dag 2 van 5
+06-02-2024,12:00,14:00,NPO-Radio-2,2,Top 80’s,dag 2 van 5
+06-02-2024,14:00,16:00,NPO-Radio-2,2,Top 80’s,dag 2 van 5
+06-02-2024,16:00,18:00,NPO-Radio-2,2,Top 80’s,dag 2 van 5
+06-02-2024,18:00,20:00,NPO-Radio-2,2,Top 80’s,dag 2 van 5
+06-02-2024,20:00,22:00,NPO-Radio-2,2,Top 80’s,dag 2 van 5
+06-02-2024,22:00,00:00,NPO-Radio-2,2,Top 80’s,dag 2 van 5
+06-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+06-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+07-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+07-02-2024,09:00,12:00,NPO-Radio-2,2,Top 80’s,dag 3 van 5
+07-02-2024,12:00,14:00,NPO-Radio-2,2,Top 80’s,dag 3 van 5
+07-02-2024,14:00,16:00,NPO-Radio-2,2,Top 80’s,dag 3 van 5
+07-02-2024,16:00,18:00,NPO-Radio-2,2,Top 80’s,dag 3 van 5
+07-02-2024,18:00,20:00,NPO-Radio-2,2,Top 80’s,dag 3 van 5
+07-02-2024,20:00,22:00,NPO-Radio-2,2,Top 80’s,dag 3 van 5
+07-02-2024,22:00,00:00,NPO-Radio-2,2,Top 80’s,dag 3 van 5
+07-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+07-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+08-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+08-02-2024,09:00,12:00,NPO-Radio-2,2,Top 80’s,dag 4 van 5
+08-02-2024,12:00,14:00,NPO-Radio-2,2,Top 80’s,dag 4 van 5
+08-02-2024,14:00,16:00,NPO-Radio-2,2,Top 80’s,dag 4 van 5
+08-02-2024,16:00,18:00,NPO-Radio-2,2,Top 80’s,dag 4 van 5
+08-02-2024,18:00,20:00,NPO-Radio-2,2,Top 80’s,dag 4 van 5
+08-02-2024,20:00,22:00,NPO-Radio-2,2,Top 80’s,dag 4 van 5
+08-02-2024,22:00,00:00,NPO-Radio-2,2,Top 80’s,dag 4 van 5
+08-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+08-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+09-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+09-02-2024,09:00,12:00,NPO-Radio-2,2,Top 80’s,dag 5 van 5
+09-02-2024,12:00,14:00,NPO-Radio-2,2,Top 80’s,dag 5 van 5
+09-02-2024,14:00,16:00,NPO-Radio-2,2,Top 80’s,dag 5 van 5
+09-02-2024,16:00,18:00,NPO-Radio-2,2,Top 80’s,dag 5 van 5
+09-02-2024,18:00,20:00,NPO-Radio-2,2,Top 80’s,dag 5 van 5
+09-02-2024,20:00,22:00,NPO-Radio-2,2,Het Platenpaleis,bnnvara
+09-02-2024,22:00,00:00,NPO-Radio-2,2,Club Staverman,kro-ncrv
+09-02-2024,00:00,02:00,NPO-Radio-2,2,Eddy’s Nachtwacht,PowNed
+09-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+10-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+10-02-2024,07:00,10:00,NPO-Radio-2,2,Vroeg Pieken,kro-ncrv
+10-02-2024,10:00,12:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+10-02-2024,12:00,14:00,NPO-Radio-2,2,Spijkers met Koppen,bnnvara
+10-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+10-02-2024,16:00,18:00,NPO-Radio-2,2,Muziekcafé,AvroTros
+10-02-2024,18:00,21:00,NPO-Radio-2,2,Soul Night met Corné,AvroTros
+10-02-2024,21:00,00:00,NPO-Radio-2,2,Soul Night met Shay,bnnvara
+10-02-2024,00:00,07:00,NPO-Radio-2,2,Soul Night Dossier,
+11-02-2024,00:00,07:00,NPO-Radio-2,2,Soul Night Dossier,
+11-02-2024,07:00,10:00,NPO-Radio-2,2,Vroeg Pieken,kro-ncrv
+11-02-2024,10:00,12:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+11-02-2024,12:00,14:00,NPO-Radio-2,2,Het Platenpaleis,bnnvara
+11-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+11-02-2024,16:00,18:00,NPO-Radio-2,2,Martine In De Middag,EO
+11-02-2024,18:00,19:00,NPO-Radio-2,2,De Verrukkelijke 15,bnnvara
+11-02-2024,19:00,21:00,NPO-Radio-2,2,Blokhuis,bnnvara
+11-02-2024,21:00,00:00,NPO-Radio-2,2,De Albumshow,AvroTros
+11-02-2024,00:00,02:00,NPO-Radio-2,2,Van Inkels Choice,bnnvara
+11-02-2024,02:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+11-02-2024,04:00,06:00,NPO-Radio-2,2,Wildgroei,bnnvara
+12-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+12-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+12-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+12-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+12-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+12-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+12-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+12-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+12-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+12-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+13-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+13-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+13-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+13-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+13-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+13-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+13-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+13-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+13-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+13-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+14-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+14-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+14-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+14-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+14-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+14-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+14-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+14-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+14-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+14-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+15-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+15-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+15-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+15-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+15-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+15-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+15-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+15-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+15-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+15-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+16-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+16-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+16-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+16-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+16-02-2024,16:00,18:00,NPO-Radio-2,2,Keur In De Middag,PowNed
+16-02-2024,18:00,20:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+16-02-2024,20:00,22:00,NPO-Radio-2,2,Het Platenpaleis,bnnvara
+16-02-2024,22:00,00:00,NPO-Radio-2,2,Club Staverman,kro-ncrv
+16-02-2024,00:00,02:00,NPO-Radio-2,2,Eddy’s Nachtwacht,PowNed
+16-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+17-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+17-02-2024,07:00,10:00,NPO-Radio-2,2,Vroeg Pieken,kro-ncrv
+17-02-2024,10:00,12:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+17-02-2024,12:00,14:00,NPO-Radio-2,2,Spijkers met Koppen,bnnvara
+17-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+17-02-2024,16:00,18:00,NPO-Radio-2,2,Muziekcafé,AvroTros
+17-02-2024,18:00,21:00,NPO-Radio-2,2,Soul Night met Corné,AvroTros
+17-02-2024,21:00,00:00,NPO-Radio-2,2,Soul Night met Shay,bnnvara
+17-02-2024,00:00,07:00,NPO-Radio-2,2,Soul Night Dossier,
+18-02-2024,00:00,07:00,NPO-Radio-2,2,Soul Night Dossier,
+18-02-2024,07:00,10:00,NPO-Radio-2,2,Vroeg Pieken,kro-ncrv
+18-02-2024,10:00,12:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+18-02-2024,12:00,14:00,NPO-Radio-2,2,Het Platenpaleis,bnnvara
+18-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+18-02-2024,16:00,18:00,NPO-Radio-2,2,Martine In De Middag,EO
+18-02-2024,18:00,19:00,NPO-Radio-2,2,De Verrukkelijke 15,bnnvara
+18-02-2024,19:00,21:00,NPO-Radio-2,2,Blokhuis,bnnvara
+18-02-2024,21:00,00:00,NPO-Radio-2,2,De Albumshow,AvroTros
+18-02-2024,00:00,02:00,NPO-Radio-2,2,Van Inkels Choice,bnnvara
+18-02-2024,02:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+18-02-2024,04:00,06:00,NPO-Radio-2,2,Wildgroei,bnnvara
+19-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+19-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+19-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+19-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+19-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+19-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+19-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+19-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+19-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+19-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+20-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+20-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+20-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+20-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+20-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+20-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+20-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+20-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+20-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+20-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+21-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+21-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+21-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+21-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+21-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+21-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+21-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+21-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+21-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+21-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+22-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+22-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+22-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+22-02-2024,14:00,16:00,NPO-Radio-2,2,Gijs 2.4,kro-ncrv
+22-02-2024,16:00,18:00,NPO-Radio-2,2,De Wild in de Middag,PowNed
+22-02-2024,18:00,20:00,NPO-Radio-2,2,Het Oor Wil Ook Wat,kro-ncrv
+22-02-2024,20:00,22:00,NPO-Radio-2,2,Met Morad,bnnvara
+22-02-2024,22:00,00:00,NPO-Radio-2,2,Dees Moet Je Horen,PowNed
+22-02-2024,00:00,04:00,NPO-Radio-2,2,Top 2000 Dossier,
+22-02-2024,04:00,06:00,NPO-Radio-2,2,Dit Is Tannaz,EO
+23-02-2024,06:00,09:00,NPO-Radio-2,2,Jan-Willem Start Op,bnnvara
+23-02-2024,09:00,12:00,NPO-Radio-2,2,Aan de Slag,AvroTros
+23-02-2024,12:00,14:00,NPO-Radio-2,2,Annemiekes A-Lunch,AvroTros
+23-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+23-02-2024,16:00,18:00,NPO-Radio-2,2,Keur In De Middag,PowNed
+23-02-2024,18:00,20:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+23-02-2024,20:00,22:00,NPO-Radio-2,2,Het Platenpaleis,bnnvara
+23-02-2024,22:00,00:00,NPO-Radio-2,2,Club Staverman,kro-ncrv
+23-02-2024,00:00,02:00,NPO-Radio-2,2,Eddy’s Nachtwacht,PowNed
+23-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+24-02-2024,02:00,07:00,NPO-Radio-2,2,Top 2000 Dossier,
+24-02-2024,07:00,10:00,NPO-Radio-2,2,Vroeg Pieken,kro-ncrv
+24-02-2024,10:00,12:00,NPO-Radio-2,2,Rinkeldekinkel,bnnvara
+24-02-2024,12:00,14:00,NPO-Radio-2,2,Spijkers met Koppen,bnnvara
+24-02-2024,14:00,16:00,NPO-Radio-2,2,Paul,AvroTros
+24-02-2024,16:00,18:00,NPO-Radio-2,2,Muziekcafé,AvroTros
+24-02-2024,18:00,21:00,NPO-Radio-2,2,Soul Night met Corné,AvroTros
+24-02-2024,21:00,00:00,NPO-Radio-2,2,Soul Night met Shay,bnnvara
+24-02-2024,00:00,07:00,NPO-Radio-2,2,Soul Night Dossier,
+01-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+01-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+01-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+01-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+01-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+01-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+01-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+01-02-2024,01:00,04:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+01-02-2024,04:00,06:00,NPO-Radio-3,3,Andres Odijk,kro-ncrv
+02-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+02-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+02-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+02-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+02-02-2024,16:00,18:00,NPO-Radio-3,3,Barend & Benner,PowNed
+02-02-2024,18:00,20:00,NPO-Radio-3,3,De Avondvrijdagshow,PowNed
+02-02-2024,20:00,23:00,NPO-Radio-3,3,Rob & Wijnand: Carnaval Countdown,
+02-02-2024,23:00,01:00,NPO-Radio-3,3,3voor12 Radio,VPRO
+02-02-2024,01:00,04:00,NPO-Radio-3,3,Anneli Verhees,
+02-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+03-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+03-02-2024,07:00,10:00,NPO-Radio-3,3,Sophie & Mart,AvroTros
+03-02-2024,10:00,13:00,NPO-Radio-3,3,Rámon Verkoeijen,bnnvara
+03-02-2024,13:00,16:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+03-02-2024,16:00,19:00,NPO-Radio-3,3,De Verlanglijst,AvroTros
+03-02-2024,19:00,22:00,NPO-Radio-3,3,Vera on Track,NTR
+03-02-2024,22:00,01:00,NPO-Radio-3,3,The Beat,NTR
+03-02-2024,01:00,04:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+03-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+04-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+04-02-2024,07:00,10:00,NPO-Radio-3,3,Sophie & Mart,AvroTros
+04-02-2024,10:00,13:00,NPO-Radio-3,3,Rámon Verkoeijen,bnnvara
+04-02-2024,13:00,16:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+04-02-2024,16:00,19:00,NPO-Radio-3,3,Yoeri Leeflang,AvroTros
+04-02-2024,19:00,22:00,NPO-Radio-3,3,Vera on Track,NTR
+04-02-2024,22:00,01:00,NPO-Radio-3,3,Wat Anders,Omroep Zwart
+04-02-2024,01:00,04:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+04-02-2024,04:00,06:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+05-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+05-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+05-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+05-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+05-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+05-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+05-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+05-02-2024,01:00,04:00,NPO-Radio-3,3,Obi Raaijmaakers,NTR
+05-02-2024,04:00,06:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+06-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+06-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+06-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+06-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+06-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+06-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+06-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+06-02-2024,01:00,04:00,NPO-Radio-3,3,Obi Raaijmaakers,NTR
+06-02-2024,04:00,06:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+07-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+07-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+07-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+07-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+07-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+07-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+07-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+07-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+07-02-2024,04:00,06:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+08-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+08-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+08-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+08-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+08-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+08-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+08-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+08-02-2024,01:00,04:00,NPO-Radio-3,3,Anneli Verhees,
+08-02-2024,04:00,06:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+09-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+09-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+09-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+09-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+09-02-2024,16:00,19:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+09-02-2024,19:00,22:00,NPO-Radio-3,3,De Avondvrijdagshow,PowNed
+09-02-2024,22:00,01:00,NPO-Radio-3,3,3voor12 Radio,VPRO
+09-02-2024,01:00,04:00,NPO-Radio-3,3,Anneli Verhees,
+09-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+10-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+10-02-2024,07:00,10:00,NPO-Radio-3,3,Sophie & Mart,AvroTros
+10-02-2024,10:00,13:00,NPO-Radio-3,3,Rámon Verkoeijen,bnnvara
+10-02-2024,13:00,16:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+10-02-2024,16:00,19:00,NPO-Radio-3,3,De Verlanglijst,AvroTros
+10-02-2024,19:00,22:00,NPO-Radio-3,3,Vera on Track,NTR
+10-02-2024,22:00,01:00,NPO-Radio-3,3,The Beat,NTR
+10-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+10-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+11-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+11-02-2024,07:00,10:00,NPO-Radio-3,3,Sophie & Mart,AvroTros
+11-02-2024,10:00,13:00,NPO-Radio-3,3,Rámon Verkoeijen,bnnvara
+11-02-2024,13:00,16:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+11-02-2024,16:00,19:00,NPO-Radio-3,3,Yoeri Leeflang,AvroTros
+11-02-2024,19:00,22:00,NPO-Radio-3,3,Vera on Track,NTR
+11-02-2024,22:00,01:00,NPO-Radio-3,3,Wat Anders,Omroep Zwart
+11-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+11-02-2024,04:00,06:00,NPO-Radio-3,3,Obi Raaijmaakers,
+12-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+12-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+12-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+12-02-2024,13:00,16:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+12-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+12-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+12-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+12-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+12-02-2024,04:00,06:00,NPO-Radio-3,3,Obi Raaijmaakers,
+13-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+13-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+13-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+13-02-2024,13:00,16:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+13-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+13-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+13-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+13-02-2024,01:00,04:00,NPO-Radio-3,3,Anneli Verhees,
+13-02-2024,04:00,06:00,NPO-Radio-3,3,Obi Raaijmaakers,
+14-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+14-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+14-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+14-02-2024,13:00,16:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+14-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+14-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+14-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+14-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+14-02-2024,04:00,06:00,NPO-Radio-3,3,Obi Raaijmaakers,
+15-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+15-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+15-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+15-02-2024,13:00,16:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+15-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+15-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+15-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+15-02-2024,01:00,04:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+15-02-2024,04:00,06:00,NPO-Radio-3,3,Obi Raaijmaakers,
+16-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+16-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+16-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+16-02-2024,13:00,16:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+16-02-2024,16:00,19:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+16-02-2024,19:00,22:00,NPO-Radio-3,3,De Avondvrijdagshow,PowNed
+16-02-2024,22:00,01:00,NPO-Radio-3,3,3voor12 Radio,VPRO
+16-02-2024,01:00,04:00,NPO-Radio-3,3,Anneli Verhees,
+16-02-2024,04:00,07:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+17-02-2024,04:00,07:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+17-02-2024,07:00,10:00,NPO-Radio-3,3,Sophie & Mart,AvroTros
+17-02-2024,10:00,13:00,NPO-Radio-3,3,Rámon Verkoeijen,bnnvara
+17-02-2024,13:00,16:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+17-02-2024,16:00,19:00,NPO-Radio-3,3,De Verlanglijst,AvroTros
+17-02-2024,19:00,22:00,NPO-Radio-3,3,Vera on Track,NTR
+17-02-2024,22:00,01:00,NPO-Radio-3,3,The Beat,NTR
+17-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+17-02-2024,04:00,07:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+18-02-2024,04:00,07:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+18-02-2024,07:00,10:00,NPO-Radio-3,3,Sophie & Mart,AvroTros
+18-02-2024,10:00,13:00,NPO-Radio-3,3,Rámon Verkoeijen,bnnvara
+18-02-2024,13:00,16:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+18-02-2024,16:00,19:00,NPO-Radio-3,3,Yoeri Leeflang,AvroTros
+18-02-2024,19:00,22:00,NPO-Radio-3,3,Vera on Track,NTR
+18-02-2024,22:00,01:00,NPO-Radio-3,3,Wat Anders,Omroep Zwart
+18-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+18-02-2024,04:00,06:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+19-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+19-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+19-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+19-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+19-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+19-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+19-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+19-02-2024,01:00,04:00,NPO-Radio-3,3,Obi Raaijmaakers,NTR
+19-02-2024,04:00,06:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+20-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+20-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+20-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+20-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+20-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+20-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+20-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+20-02-2024,01:00,04:00,NPO-Radio-3,3,Floris Molenaar,
+20-02-2024,04:00,06:00,NPO-Radio-3,3,Andres Odijk,kro-ncrv
+21-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+21-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+21-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+21-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+21-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+21-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+21-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+21-02-2024,01:00,04:00,NPO-Radio-3,3,Annan Verboom,
+21-02-2024,04:00,06:00,NPO-Radio-3,3,Andres Odijk,kro-ncrv
+22-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+22-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+22-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+22-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+22-02-2024,16:00,19:00,NPO-Radio-3,3,Barend & Benner,PowNed
+22-02-2024,19:00,22:00,NPO-Radio-3,3,Jaimy de Ruijter,bnnvara
+22-02-2024,22:00,01:00,NPO-Radio-3,3,VoorAan,PowNed
+22-02-2024,01:00,04:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+22-02-2024,04:00,06:00,NPO-Radio-3,3,Andres Odijk,kro-ncrv
+23-02-2024,06:00,09:00,NPO-Radio-3,3,Rob & Wijnand en de Ochtendshow,kro-ncrv / AvroTros
+23-02-2024,09:00,10:00,NPO-Radio-3,3,Tom & Joe,bnnvara
+23-02-2024,10:00,13:00,NPO-Radio-3,3,Het Betere Werk,AvroTros
+23-02-2024,13:00,16:00,NPO-Radio-3,3,Ivo van Breukelen,kro-ncrv
+23-02-2024,16:00,19:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+23-02-2024,19:00,22:00,NPO-Radio-3,3,De Avondvrijdagshow,PowNed
+23-02-2024,22:00,01:00,NPO-Radio-3,3,3voor12 Radio,VPRO
+23-02-2024,01:00,04:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+23-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+24-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+24-02-2024,07:00,10:00,NPO-Radio-3,3,Sophie & Mart,AvroTros
+24-02-2024,10:00,13:00,NPO-Radio-3,3,Rámon Verkoeijen,bnnvara
+24-02-2024,13:00,16:00,NPO-Radio-3,3,Mark en Mai,bnnvara
+24-02-2024,16:00,19:00,NPO-Radio-3,3,De Verlanglijst,AvroTros
+24-02-2024,19:00,22:00,NPO-Radio-3,3,Vera on Track,NTR
+24-02-2024,22:00,01:00,NPO-Radio-3,3,The Beat,NTR
+24-02-2024,01:00,04:00,NPO-Radio-3,3,Sebastiaan Ockhuysen,
+24-02-2024,04:00,07:00,NPO-Radio-3,3,Floris Molenaar,kro-ncrv
+01-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+01-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+01-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+01-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+01-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+01-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+01-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+01-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+02-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+02-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+02-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+02-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+02-02-2024,16:00,18:00,NPO-Radio-5,5,De Weekendborrel,AvroTros
+02-02-2024,18:00,20:00,NPO-Radio-5,5,Top 40 Hitdossier,Max
+02-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+02-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+03-02-2024,06:00,10:00,NPO-Radio-5,5,Wekker-Wakker-Weekend,Max
+03-02-2024,10:00,12:00,NPO-Radio-5,5,FM Op 5,bnnvara
+03-02-2024,12:00,14:00,NPO-Radio-5,5,Angela,Max
+03-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+03-02-2024,16:00,18:00,NPO-Radio-5,5,Theater van het Sentiment,kro-ncrv
+03-02-2024,18:00,20:00,NPO-Radio-5,5,De Muzikale Fruitmand,EO
+03-02-2024,20:00,23:00,NPO-Radio-5,5,Volgspot,kro-ncrv
+03-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+04-02-2024,06:00,09:00,NPO-Radio-5,5,Groot Nieuws,EO
+04-02-2024,09:00,10:00,NPO-Radio-5,5,De Sandwich,AvroTros
+04-02-2024,10:00,11:00,NPO-Radio-5,5,Andermans Veren,AvroTros
+04-02-2024,11:00,12:00,NPO-Radio-5,5,De Sandwich,AvroTros
+04-02-2024,12:00,14:00,NPO-Radio-5,5,Adres Onbekend,kro-ncrv
+04-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+04-02-2024,16:00,18:00,NPO-Radio-5,5,Theater van het Sentiment,kro-ncrv
+04-02-2024,18:00,20:00,NPO-Radio-5,5,De Muzikale Fruitmand,EO
+04-02-2024,20:00,23:00,NPO-Radio-5,5,Volgspot,kro-ncrv
+04-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+05-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+05-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+05-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+05-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+05-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+05-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+05-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+05-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+06-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+06-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+06-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+06-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+06-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+06-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+06-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+06-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+07-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+07-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+07-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+07-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+07-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+07-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+07-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+07-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+08-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+08-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+08-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+08-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+08-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+08-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+08-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+08-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+09-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+09-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+09-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+09-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+09-02-2024,16:00,18:00,NPO-Radio-5,5,De Weekendborrel,AvroTros
+09-02-2024,18:00,20:00,NPO-Radio-5,5,Top 40 Hitdossier,Max
+09-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+09-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+10-02-2024,06:00,10:00,NPO-Radio-5,5,Wekker-Wakker-Weekend,Max
+10-02-2024,10:00,12:00,NPO-Radio-5,5,FM Op 5,bnnvara
+10-02-2024,12:00,14:00,NPO-Radio-5,5,Angela,Max
+10-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+10-02-2024,16:00,18:00,NPO-Radio-5,5,Theater van het Sentiment,kro-ncrv
+10-02-2024,18:00,20:00,NPO-Radio-5,5,De Muzikale Fruitmand,EO
+10-02-2024,20:00,23:00,NPO-Radio-5,5,Volgspot,kro-ncrv
+10-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+11-02-2024,06:00,09:00,NPO-Radio-5,5,Groot Nieuws,EO
+11-02-2024,09:00,10:00,NPO-Radio-5,5,De Sandwich,AvroTros
+11-02-2024,10:00,11:00,NPO-Radio-5,5,Andermans Veren,AvroTros
+11-02-2024,11:00,12:00,NPO-Radio-5,5,De Sandwich,AvroTros
+11-02-2024,12:00,14:00,NPO-Radio-5,5,Adres Onbekend,kro-ncrv
+11-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+11-02-2024,16:00,18:00,NPO-Radio-5,5,Theater van het Sentiment,kro-ncrv
+11-02-2024,18:00,20:00,NPO-Radio-5,5,De Muzikale Fruitmand,EO
+11-02-2024,20:00,23:00,NPO-Radio-5,5,Volgspot,kro-ncrv
+11-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+12-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+12-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+12-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+12-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+12-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+12-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+12-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+12-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+13-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+13-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+13-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+13-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+13-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+13-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+13-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+13-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+14-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+14-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+14-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+14-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+14-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+14-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+14-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+14-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+15-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+15-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+15-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+15-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+15-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+15-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+15-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+15-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+16-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+16-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+16-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+16-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+16-02-2024,16:00,18:00,NPO-Radio-5,5,De Weekendborrel,AvroTros
+16-02-2024,18:00,20:00,NPO-Radio-5,5,Top 40 Hitdossier,Max
+16-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+16-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+17-02-2024,De,06:00,NPO-Radio-5,5,Evergreen Week van de Jaren 60,
+17-02-2024,06:00,10:00,NPO-Radio-5,5,Wekker-Wakker-Weekend,Max
+17-02-2024,10:00,12:00,NPO-Radio-5,5,FM Op 5,bnnvara
+17-02-2024,12:00,14:00,NPO-Radio-5,5,Angela,Max
+17-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+17-02-2024,16:00,18:00,NPO-Radio-5,5,Theater van het Sentiment,kro-ncrv
+17-02-2024,18:00,20:00,NPO-Radio-5,5,De Muzikale Fruitmand,EO
+17-02-2024,20:00,23:00,NPO-Radio-5,5,Volgspot,kro-ncrv
+17-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+18-02-2024,De,06:00,NPO-Radio-5,5,Evergreen Week van de Jaren 60,
+18-02-2024,06:00,09:00,NPO-Radio-5,5,Groot Nieuws,EO
+18-02-2024,09:00,10:00,NPO-Radio-5,5,De Sandwich,AvroTros
+18-02-2024,10:00,11:00,NPO-Radio-5,5,Andermans Veren,AvroTros
+18-02-2024,11:00,12:00,NPO-Radio-5,5,De Sandwich,AvroTros
+18-02-2024,12:00,14:00,NPO-Radio-5,5,Adres Onbekend,kro-ncrv
+18-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+18-02-2024,16:00,18:00,NPO-Radio-5,5,Theater van het Sentiment,kro-ncrv
+18-02-2024,18:00,20:00,NPO-Radio-5,5,De Muzikale Fruitmand,EO
+18-02-2024,20:00,23:00,NPO-Radio-5,5,Volgspot,kro-ncrv
+18-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+19-02-2024,De,06:00,NPO-Radio-5,5,Evergreen Week van de Jaren 60,
+19-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+19-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+19-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+19-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+19-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+19-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+19-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+19-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+20-02-2024,De,06:00,NPO-Radio-5,5,Evergreen Week van de Jaren 60,
+20-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+20-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+20-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+20-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+20-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+20-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+20-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+20-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+21-02-2024,De,06:00,NPO-Radio-5,5,Evergreen Week van de Jaren 60,
+21-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+21-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+21-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+21-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+21-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+21-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+21-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+21-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+22-02-2024,De,06:00,NPO-Radio-5,5,Evergreen Week van de Jaren 60,
+22-02-2024,06:00,09:00,NPO-Radio-5,5,Goeiedag Haandrikman,Max
+22-02-2024,09:00,12:00,NPO-Radio-5,5,Arbeidsvitaminen,AvroTros
+22-02-2024,12:00,14:00,NPO-Radio-5,5,Lunch Lekker,Max
+22-02-2024,14:00,16:00,NPO-Radio-5,5,Open Huis,EO
+22-02-2024,16:00,18:00,NPO-Radio-5,5,BertOp5,kro-ncrv
+22-02-2024,18:00,20:00,NPO-Radio-5,5,De Avondstart,Max
+22-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+22-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+23-02-2024,De,06:00,NPO-Radio-5,5,Evergreen Week van de Jaren 60,
+23-02-2024,06:00,20:00,NPO-Radio-5,5,Evergreen Toplijst van de Jaren 60,
+23-02-2024,20:00,23:00,NPO-Radio-5,5,De Avond Van 5,EO
+23-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
+24-02-2024,06:00,10:00,NPO-Radio-5,5,Wekker-Wakker-Weekend,Max
+24-02-2024,10:00,12:00,NPO-Radio-5,5,FM Op 5,bnnvara
+24-02-2024,12:00,14:00,NPO-Radio-5,5,Angela,Max
+24-02-2024,14:00,16:00,NPO-Radio-5,5,Magical Mystery Tour,kro-ncrv
+24-02-2024,16:00,18:00,NPO-Radio-5,5,Theater van het Sentiment,kro-ncrv
+24-02-2024,18:00,20:00,NPO-Radio-5,5,De Muzikale Fruitmand,EO
+24-02-2024,20:00,23:00,NPO-Radio-5,5,Volgspot,kro-ncrv
+24-02-2024,23:00,06:00,NPO-Radio-5,5,Muzieknacht,NPO Radio 5
