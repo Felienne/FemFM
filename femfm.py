@@ -1,10 +1,12 @@
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, time
 
 import requests
 import json
 
 import urllib3
+from bs4 import BeautifulSoup
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 server = os.getenv('SERVER')
@@ -114,6 +116,12 @@ def genereer_uitvoer(kanaal):
     vrouw = False
     zap = False
 
+    naam, omroep = huidig_programma(kanaal)
+    if omroep:
+        programma = f"{naam} van omroep {omroep}"
+    else:
+        programma = naam
+
     if x := huidig_liedje_op_radio(kanaal):
         artiest, titel, starttijd, eindtijd, eindtijd_object = x
         vrouw = is_vrouw(artiest)
@@ -121,10 +129,10 @@ def genereer_uitvoer(kanaal):
         if not vrouw:
             volgende_kanaal = zap_naar(kanaal)
             zap = True
-            tekst = f"Er speelt GEEN vrouw op Radio {kanaal}, maar {artiest}. Zappen maar!"
+            tekst = f"Er speelt GEEN vrouw op Radio {kanaal} in het programma {programma}, maar {artiest}. Zappen maar!"
             wachttijd = "10"
         else:
-            tekst = f"Er speelt een vrouw op Radio {kanaal}! Namelijk {artiest} met {titel}. " \
+            tekst = f"Er speelt een vrouw op Radio {kanaal} in het programma {programma}! Namelijk {artiest} met {titel}. " \
                     f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M:%S')} en het is nu {nu().strftime('%H:%M:%S')}."
             duur = (eindtijd_object -nu()).total_seconds()
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
@@ -135,4 +143,44 @@ def genereer_uitvoer(kanaal):
         volgende_kanaal = kanaal
         vrouw = None
 
-    return tekst, volgende_kanaal, wachttijd, vrouw, zap
+    return tekst, volgende_kanaal, wachttijd, vrouw, zap, programma
+
+zenders_slug = {
+    '10': 'Radio-10',
+    'Sky': 'Sky-Radio',
+    'Q': 'Qmusic',
+    'Veronica': 'Radio-Veronica',
+    '538': 'Radio-538',
+    '2': 'NPO-Radio-2',
+    '3': 'NPO-Radio-3',
+    '5': 'NPO-Radio-5'
+}
+
+
+def huidig_programma(kanaal):
+    datum_en_tijd = nu()
+
+    datum = datum_en_tijd.strftime('%d-%m-%Y')
+    tijd = datum_en_tijd.time()
+
+    kanaal = zenders_slug[kanaal]
+
+    response = requests.get(f'https://www.oorboekje.nl/{kanaal}/{datum}#programmering',
+                            headers={'User-Agent': 'Mozilla/5.0'})
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    programmas = soup.find_all("p", {"class": "pgProgTijdEnTitel"})
+
+    # Verwijder van het einde alle programma's die na middernacht zijn
+    while len(programmas) > 0 and str(programmas[-1].contents[0]).strip().startswith('0'):
+        programmas.pop()
+
+    for p in reversed(programmas):
+        programma_string = str(p.contents[0]).strip()
+        begintijd_string, naam_en_omroep = programma_string.split(' ', 1)
+        begintijd_h, begintijd_m = begintijd_string.split(":")
+        begintijd = time(int(begintijd_h), int(begintijd_m))
+
+        naam, omroep = naam_en_omroep.split(' (') if "(" in naam_en_omroep else [naam_en_omroep, None]
+        if begintijd < tijd:
+            return naam,  omroep

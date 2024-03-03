@@ -24,7 +24,7 @@ if not os.path.isfile(output_bestand):
         already_saved =[]
 else:
     # gather files already in output
-    with open('to_classify_with_percentage.csv', encoding='utf-8-sig', newline='') as csvfile:
+    with open('archief/to_classify_with_percentage.csv', encoding='utf-8-sig', newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         headers = next(reader)
 

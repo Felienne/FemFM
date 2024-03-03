@@ -55,7 +55,7 @@ def nu_op(kanaal):
             'Totaal aantal zaps': 0
         }
 
-    tekst, volgende_kanaal, wachttijd, vrouw, zap = femfm.genereer_uitvoer(kanaal)
+    tekst, volgende_kanaal, wachttijd, vrouw, zap, programma = femfm.genereer_uitvoer(kanaal)
 
     if vrouw is not None: # geen liedje = None
         if vrouw:
