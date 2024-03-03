@@ -132,7 +132,7 @@ def genereer_uitvoer(kanaal):
             tekst = f"Er speelt GEEN vrouw op Radio {kanaal} in het programma {programma}, maar {artiest}. Zappen maar!"
             wachttijd = "10"
         else:
-            tekst = f"Er speelt een vrouw op Radio {kanaal} in het programma {programma}! Namelijk {artiest} met {titel}. " \
+            tekst = f"Er speelt een vrouw op Radio {kanaal} in het programma {programma}! <p> Namelijk {artiest} met {titel}. " \
                     f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M:%S')} en het is nu {nu().strftime('%H:%M:%S')}."
             duur = (eindtijd_object -nu()).total_seconds()
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
@@ -181,6 +181,6 @@ def huidig_programma(kanaal):
         begintijd_h, begintijd_m = begintijd_string.split(":")
         begintijd = time(int(begintijd_h), int(begintijd_m))
 
-        naam, omroep = naam_en_omroep.split(' (') if "(" in naam_en_omroep else [naam_en_omroep, None]
+        naam, omroep = naam_en_omroep.split(' (') if "(" in naam_en_omroep else [naam_en_omroep, ' ']
         if begintijd < tijd:
-            return naam,  omroep
+            return naam,  omroep[:-1]
