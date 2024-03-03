@@ -31,7 +31,6 @@ def soup():
                 programma_string = str(p.contents[0]).strip()
                 begintijd, naam_en_omroep = programma_string.split(' ', 1)
                 naam, omroep = naam_en_omroep.split(' (') if "(" in naam_en_omroep else [naam_en_omroep, '']
-                #print(begintijd, '-', naam, '-', omroep[0:-1])
                 if i < len(programmas)-1:
                     volgende_programma_string = str(programmas[i+1].contents[0]).strip()
                     eindtijd, _ = volgende_programma_string.split(' ', 1)

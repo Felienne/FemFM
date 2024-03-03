@@ -130,7 +130,7 @@ def genereer_uitvoer(kanaal):
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
             volgende_kanaal = kanaal
     else:
-        tekst = f"We zijn {'wel' if server else 'niet'} op de server. Het is nu {nu().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}. Even wachten nog...!"
+        tekst = f"Het is nu {nu().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}. <br> Even wachten nog...!"
         wachttijd = "30"
         volgende_kanaal = kanaal
         vrouw = None
