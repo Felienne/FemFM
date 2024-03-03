@@ -1,0 +1,125 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0; /* Light pink background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff99cc; /* Dark pink header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff99cc;
+}
+
+/* Main Content Styles */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff99cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Highlight Styles for Female Achievements */
+.female-achievements {
+    background-color: #ffccf5; /* Light pink highlight */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.female-achievements h2 {
+    color: #ff99cc; /* Dark pink text */
+}
+
+.female-achievements p {
+    color: #666;
+}
+
+/* Image Styles */
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+
+
+/* Middle Part Styles */
+.text-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 20px); /* Adjusted width for three columns */
+    padding: 0 10px;
+}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 0 0 calc(100% - 20px); /* Adjusted width for single column */
+        margin-top: 20px;
+    }
+}

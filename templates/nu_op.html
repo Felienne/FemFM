@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="{{wachttijd}}; URL={{volgende_url}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <title>Nu op de radio...</title>
 </head>
 <body>
@@ -12,21 +13,70 @@
     }
 </script>
 
-<h3>{{tekst}}</h3>
-<iframe
-        width="300px"
-        height="160px"
-        src="{{iframe}}"
-        allow="autoplay"
-        id="iframe"
-        title="Muziekje erbij?"></iframe>
 
-<h3>Statistieken sinds je bent begonnen met luisteren:</h3>
-Maximaal aantal zaps nodig om een vrouw te horen: {{stats['Maximaal aantal zaps']}}<br>
-Huidige aantal zaps: {{stats['Totaal aantal zaps']}}<br>
-Aantal vrouwen gehoord: {{stats['Aantal vrouwen gehoord']}}<br>
-Aantal mannen gehoord: {{stats['Aantal mannen gehoord']}}<br>
-Percentage vrouwen gehoord: {{stats['Percentage']}}%<br>
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1 class="logo">FemFM: Gegarandeerd minstens 50% vrouw wat ik hoor, of we zappen door!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Text Content Zone -->
+<div class="text-content">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>Luister Live</h2>
+                    <iframe
+                    width="300px"
+                    height="160px"
+                    src="{{iframe}}"
+                    allow="autoplay"
+                    id="iframe"
+                    title="Muziekje erbij?">
+                    </iframe>
+            </div>
+            <div class="column">
+                <h2>Should I stay or should I go?</h2>
+                {{tekst|safe}}
+            </div>
+            <div class="column">
+                <h2>Statistieken sinds je bent begonnen met luisteren:</h2>
+                Maximaal aantal zaps nodig om een vrouw te horen: {{stats['Maximaal aantal zaps']}}<br>
+                Huidige aantal zaps: {{stats['Totaal aantal zaps']}}<br>
+                Aantal vrouwen gehoord: {{stats['Aantal vrouwen gehoord']}}<br>
+                Aantal mannen gehoord: {{stats['Aantal mannen gehoord']}}<br>
+                Percentage vrouwen gehoord: {{stats['Percentage']}}%<br>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 FemFM. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
