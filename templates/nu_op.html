@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="{{wachttijd}}; URL={{volgende_url}}" />
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <title>Nu op de radio...</title>
+
+    <style>
+        .fem {
+            font-family: "Playfair Display", serif;
+            font-weight: 200;
+            font-size: 14rem;
+            letter-spacing: -0.05em;
+            color: white;
+            margin-bottom: -20px;
+        }
+
+        .slogan {
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #2c0619;
+        }
+
+        .FM {
+            margin-left: 10px;
+            font-family: Sansita, sans-serif;
+            font-weight: 700;
+            font-size: 11rem;
+            color: #4a0f2c;
+            letter-spacing: -0.1rem;
+        }
+    </style>
 </head>
 <body>
 <script>
@@ -13,18 +45,16 @@
     }
 </script>
 
-
 <!-- Header -->
 <header>
     <div class="container">
-        <h1 class="logo">FemFM: Gegarandeerd minstens 50% vrouw wat ik hoor, of we zappen door!</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <span class="fem">fem</span>
+            <span class="FM">FM</span>
+        </div>
+        <span class="slogan">
+           〝Gegarandeerd 50% vrouw wat ik hoor, of we zappen door!〞
+        </span>
     </div>
 </header>
 
