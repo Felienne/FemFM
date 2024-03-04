@@ -31,6 +31,9 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'GEHEIM!!!!'
 
+@app.route('/about')
+def about():
+    return render_template("about.html")
 
 @app.route('/')
 def index():
