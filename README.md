@@ -4,7 +4,7 @@ FemFM is een project van wetenschapper Felienne Hermans. Het project addresseert
 
 ### FemFM: De meta radio-zender
 
-Het eerste onderdeel van het project is "meta radiozender" FemFm. Live te beliusteren via www.femfm.nl. Het idee is dat de zender begint op een Nederlands station, en doorzapt als je geen vrouw hoort. Als je wel een vrouw hoort, blijf je luisteren tot het einde van het liedje. 
+Het eerste onderdeel van het project is "meta radiozender" FemFm. Live te beluisteren via www.femfm.nl. Het idee is dat de zender begint op een Nederlands station, en doorzapt als je geen vrouw hoort. Als je wel een vrouw hoort, blijf je luisteren tot het einde van het liedje. 
 De code die dat regelt, start een Flask webserver, en zit in main.py.
 
 Je kan deze code gebruiken om je eigen meta-zender te maken, bijv altijd doorzappen als U2 opkomt, of iets dat niet Nederlands-talig is, of wat je maar wilt. 
