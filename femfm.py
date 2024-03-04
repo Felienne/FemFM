@@ -15,6 +15,9 @@ server = os.getenv('SERVER')
 with open("women.txt", 'r') as w:
     vrouwen = w.read().splitlines()
 
+with open("men.txt", 'r') as w:
+    mannen = w.read().splitlines()
+
 alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
 
 def nu():
@@ -108,9 +111,12 @@ def zap_naar(kanaal):
 
 
 def is_vrouw(artiest):
-    # todo: hier moeten we nog even ook zoeken in een lijst mannen
-    # en als we beiden niet vinden, musicbrainz raadplagen
-    return artiest in vrouwen
+    if artiest in vrouwen:
+        return True
+    elif artiest in mannen:
+        return False
+    else:
+        return None
 
 def genereer_uitvoer(kanaal):
     vrouw = False
@@ -126,7 +132,12 @@ def genereer_uitvoer(kanaal):
         artiest, titel, starttijd, eindtijd, eindtijd_object = x
         vrouw = is_vrouw(artiest)
 
-        if not vrouw:
+        if vrouw is None:
+            volgende_kanaal = zap_naar(kanaal)
+            zap = True
+            tekst = f"De artiest {artiest} op Radio {kanaal} in het programma {programma} is onbekend in onze database. Zappen maar!"
+            wachttijd = "10"
+        elif not vrouw:
             volgende_kanaal = zap_naar(kanaal)
             zap = True
             tekst = f"Er speelt GEEN vrouw op Radio {kanaal} in het programma {programma}, maar {artiest}. Zappen maar!"
