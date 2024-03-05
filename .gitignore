@@ -5,6 +5,7 @@ __pycache__/
 
 # own folders
 archief/
+femfm-working-file-with-musicbrainz.xlsx
 
 # C extensions
 *.so
