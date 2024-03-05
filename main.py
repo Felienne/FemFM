@@ -58,7 +58,7 @@ def nu_op(kanaal):
             'Totaal aantal zaps': 0
         }
 
-    tekst, volgende_kanaal, wachttijd, vrouw, zap, programma = femfm.genereer_uitvoer(kanaal)
+    tekst, historie, volgende_kanaal, wachttijd, vrouw, zap, programma = femfm.genereer_uitvoer(kanaal)
 
     if vrouw is not None: # geen liedje = None
         if vrouw:
@@ -83,6 +83,7 @@ def nu_op(kanaal):
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,
+                    historie=historie,
                     wachttijd=wachttijd,
                     iframe=player(kanaal),
                     stats=stats)
