@@ -3,7 +3,6 @@ import time
 import femfm
 from flask import redirect, url_for, render_template, session
 
-
 def player(kanaal):
     if kanaal == '1':
         return 'https://radioplayer.nporadio.nl/mini-player/radio1/'
@@ -43,6 +42,9 @@ def index():
         'Aantal mannen gehoord': 0,
         'Totaal aantal zaps': 0
     }
+    session['last_logs'] = {
+        kanaal: '' for kanaal in femfm.alle_kanalen
+    }
     return redirect(url_for("nu_op", kanaal=2))
 
 
@@ -50,6 +52,8 @@ def index():
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
     stats = session.get('stats')
+    last_logs = session.get('last_logs')
+
     if stats is None:
         stats = {
             'Maximaal aantal zaps': 0,
@@ -57,21 +61,28 @@ def nu_op(kanaal):
             'Aantal mannen gehoord': 0,
             'Totaal aantal zaps': 0
         }
+        last_logs = {
+            kanaal: '' for kanaal in femfm.alle_kanalen
+        }
 
     tekst, volgende_kanaal, wachttijd, vrouw, zap, programma = femfm.genereer_uitvoer(kanaal)
 
-    if vrouw is not None: # geen liedje = None
-        if vrouw:
-            stats['Aantal vrouwen gehoord'] += 1
-            stats['Totaal aantal zaps'] = 0
-        else:
-            stats['Aantal mannen gehoord'] += 1
+    # check if you zapped to the same track again
+    if last_logs[kanaal] != tekst:
+        last_logs[kanaal] = tekst
 
-    if zap:
-        stats['Totaal aantal zaps'] += 1
+        if vrouw is not None: # geen liedje = None
+            if vrouw:
+                stats['Aantal vrouwen gehoord'] += 1
+                stats['Totaal aantal zaps'] = 0
+            else:
+                stats['Aantal mannen gehoord'] += 1
 
-        if stats['Totaal aantal zaps'] > stats['Maximaal aantal zaps']:
-            stats['Maximaal aantal zaps'] = stats['Totaal aantal zaps']
+        if zap:
+            stats['Totaal aantal zaps'] += 1
+
+            if stats['Totaal aantal zaps'] > stats['Maximaal aantal zaps']:
+                stats['Maximaal aantal zaps'] = stats['Totaal aantal zaps']
 
     # save stats back to session
 
@@ -79,13 +90,21 @@ def nu_op(kanaal):
     stats['Percentage'] = 0 if aantal_liedjes == 0 else round(stats['Aantal vrouwen gehoord']/aantal_liedjes*100,1)
 
     session['stats'] = stats
+    session['last_logs'] = last_logs
 
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,
                     wachttijd=wachttijd,
+                    kanaal=kanaal,
                     iframe=player(kanaal),
                     stats=stats)
+
+@app.route('/zapp_zelf/<kanaal>', methods=['POST'])
+def zapp_zelf(kanaal):
+
+    return redirect(url_for("nu_op", kanaal=femfm.zap_naar(str(kanaal))))
+
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support

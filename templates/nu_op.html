@@ -45,6 +45,14 @@
     }
 </script>
 
+<script>
+function zapZelf() {
+    var iframe = document.getElementById('iframe');
+    iframe.src = "https://radioplayer.nporadio.nl/mini-player/radio5/";
+}
+</script>
+
+
 <!-- Header -->
 <header>
     <div class="container">
@@ -72,7 +80,16 @@
                     allow="autoplay"
                     id="iframe"
                     title="Muziekje erbij?">
-                    </iframe>
+                    </iframe> <br><br>
+
+                <form action="/zapp_zelf/{{ kanaal }}" method="post">
+                    Geen vrouwelijke artiest? We zappen automatisch naar een andere zender.<br><br>
+                    Zelf zappen:
+                    <button onclick="zapZelf">💥</button>
+
+                </form>
+
+
             </div>
             <div class="column">
                 <h2>Should I stay or should I go?</h2>
