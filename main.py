@@ -45,7 +45,9 @@ def index():
     }
     return redirect(url_for("nu_op", kanaal=2))
 
-
+@app.route('/media')
+def media():
+    return render_template("media.html")
 
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
