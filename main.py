@@ -47,7 +47,9 @@ def index():
     }
     return redirect(url_for("nu_op", kanaal=2))
 
-
+@app.route('/media')
+def media():
+    return render_template("media.html")
 
 @app.route('/radio/<kanaal>')
 def nu_op(kanaal):
@@ -65,7 +67,7 @@ def nu_op(kanaal):
             kanaal: '' for kanaal in femfm.alle_kanalen
         }
 
-    tekst, volgende_kanaal, wachttijd, vrouw, zap, programma = femfm.genereer_uitvoer(kanaal)
+    tekst, historie, volgende_kanaal, wachttijd, vrouw, zap, programma = femfm.genereer_uitvoer(kanaal)
 
     # check if you zapped to the same track again
     if last_logs[kanaal] != tekst:
@@ -95,6 +97,7 @@ def nu_op(kanaal):
     return render_template("nu_op.html",
                     volgende_url=url_for("nu_op", kanaal=volgende_kanaal),
                     tekst=tekst,
+                    historie=historie,
                     wachttijd=wachttijd,
                     kanaal=kanaal,
                     iframe=player(kanaal),

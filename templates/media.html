@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="{{wachttijd}}; URL={{volgende_url}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>FemFM - Nu op de radio...</title>
+
+    <style>
+        .fem {
+            font-family: "Playfair Display", serif;
+            font-weight: 150;
+            font-size: 12rem;
+            letter-spacing: -0.05em;
+            color: white;
+            margin-bottom: -30px;
+        }
+
+        .slogan {
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #2c0619;
+        }
+
+        .FM {
+            margin-left: 10px;
+            font-family: Sansita, sans-serif;
+            font-weight: 700;
+            font-size: 9.5rem;
+            color: #4a0f2c;
+            letter-spacing: -0.1rem;
+        }
+    </style>
+</head>
+<body>
+<script>
+    function triggerClickInsideIframe() {
+        document.getElementById("iframe").contentWindow.document.getElementsByClassName("PlayControl clickitem")[0].click();
+    }
+</script>
+
+<!-- Header -->
+<header>
+    <div class="container">
+
+        <div class="logo">
+            <span class="fem">fem</span>
+            <span class="FM">FM</span>
+        </div>
+        <span class="slogan">
+           〝50% vrouw in je oor, of we zappen door!〞
+        </span>
+    </div>
+</header>
+
+<!-- Text Content Zone -->
+<div class="text-content">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+            </div>
+
+            <div class="column">
+                <h2>🔈FemFM in de media </h2>
+                <a href="https://open.spotify.com/episode/1pRpS91qZfCAbLXDRmJthd?si=JFVNPp_cRUebfEtzHg6fSA">Met nerds op tafel podcast</a><br>
+                <a href="https://www.nporadio1.nl/fragmenten/nieuwsweekend/872a6bdf-69ea-44a6-bb03-69f21b7c3ff6/2024-03-09-muziekradio-is-vooral-meer-van-en-voor-mannen">Nieuwsweekend, Radio 1</a>
+
+            </div>
+            <div class="column">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.felienne.com/nl/archives/category/blog-nl/femfm">Meer lezen</a></li>
+                <li><a href="https://github.com/felienne/femfm">Code & Data</a></li>
+                <li><a href="/media">FemFM in de media</a></li>
+                <li><a href="mailto:f.f.j.hermans@vu.nl">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Felienne Hermans. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

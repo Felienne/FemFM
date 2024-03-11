@@ -8,16 +8,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="{{wachttijd}}; URL={{volgende_url}}" />
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <title>Nu op de radio...</title>
+    <title>FemFM - Nu op de radio...</title>
 
     <style>
         .fem {
             font-family: "Playfair Display", serif;
-            font-weight: 200;
-            font-size: 14rem;
+            font-weight: 150;
+            font-size: 12rem;
             letter-spacing: -0.05em;
             color: white;
-            margin-bottom: -20px;
+            margin-bottom: -30px;
         }
 
         .slogan {
@@ -32,7 +32,7 @@
             margin-left: 10px;
             font-family: Sansita, sans-serif;
             font-weight: 700;
-            font-size: 11rem;
+            font-size: 9.5rem;
             color: #4a0f2c;
             letter-spacing: -0.1rem;
         }
@@ -72,7 +72,8 @@ function zapZelf() {
     <div class="container">
         <div class="row">
             <div class="column">
-                <h2>Luister Live</h2>
+                <h2>🔈 Luister Live</h2>
+                Hier zie je naar welk radiostation jij nu luistert.<br><br>
                     <iframe
                     width="300px"
                     height="160px"
@@ -83,25 +84,27 @@ function zapZelf() {
                     </iframe> <br><br>
 
                 <form action="/zapp_zelf/{{ kanaal }}" method="post">
-                    Geen vrouwelijke artiest? We zappen automatisch naar een andere zender.<br><br>
+                    <br><br>
                     Zelf zappen:
                     <button onclick="zapZelf">💥</button>
 
                 </form>
-
+                <p>🕰 {{historie|safe}}</p>
 
             </div>
+
             <div class="column">
-                <h2>Should I stay or should I go?</h2>
+                <h2>🧠 Wat speelt er? </h2>
                 {{tekst|safe}}
             </div>
             <div class="column">
-                <h2>Statistieken sinds je bent begonnen met luisteren:</h2>
-                Maximaal aantal zaps nodig om een vrouw te horen: {{stats['Maximaal aantal zaps']}}<br>
-                Huidige aantal zaps: {{stats['Totaal aantal zaps']}}<br>
-                Aantal vrouwen gehoord: {{stats['Aantal vrouwen gehoord']}}<br>
-                Aantal mannen gehoord: {{stats['Aantal mannen gehoord']}}<br>
-                Percentage vrouwen gehoord: {{stats['Percentage']}}%<br>
+                <h2>📈 Statistieken</h2>
+                Dit was jouw luistersessie tot nu toe.<br><br>
+                &#x1F64B;&#x200D;&#x2640;&#xFE0F; Vrouwen: <strong>{{stats['Aantal vrouwen gehoord']}}</strong><br>
+                &#129318;&#8205;&#9794;&#65039;️ Mannen: <strong>{{stats['Aantal mannen gehoord']}}</strong><br>
+                👀 Vrouwen%: <strong>{{stats['Percentage']}}%</strong><br>
+                🤖 Zaps: <strong>{{stats['Totaal aantal zaps']}}</strong><br>
+                😅 Max zaps/vrouw: <strong>{{stats['Maximaal aantal zaps']}}</strong><br>
             </div>
 
         </div>
@@ -112,13 +115,15 @@ function zapZelf() {
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p>&copy; 2024 FemFM. All rights reserved.</p>
         <nav>
             <ul>
-                <li><a href="/about">About</a></li>
+                <li><a href="https://www.felienne.com/nl/archives/category/blog-nl/femfm">Meer lezen</a></li>
+                <li><a href="https://github.com/felienne/femfm">Code & Data</a></li>
+                <li><a href="/media">FemFM in de media</a></li>
                 <li><a href="mailto:f.f.j.hermans@vu.nl">Contact</a></li>
             </ul>
         </nav>
+        <p>&copy; 2024 Felienne Hermans. Alle rechten voorbehouden.</p>
     </div>
 </footer>
 

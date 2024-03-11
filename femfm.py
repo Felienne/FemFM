@@ -18,6 +18,15 @@ with open("women.txt", 'r') as w:
 with open("men.txt", 'r') as w:
     mannen = w.read().splitlines()
 
+programma_data = {}
+
+with open("programmas_met_percentage.csv", 'r') as w:
+    programmas = w.read().splitlines()
+    for programma in programmas:
+        data = programma.split(';')
+        programma_data[data[0]] = data[1]
+
+
 alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
 
 def nu():
@@ -140,21 +149,24 @@ def genereer_uitvoer(kanaal):
         elif not vrouw:
             volgende_kanaal = zap_naar(kanaal)
             zap = True
-            tekst = f"Er speelt GEEN vrouw op Radio {kanaal} in het programma {programma}, maar {artiest}. Zappen maar!"
+            tekst = f"Er speelt GEEN vrouw op Radio {kanaal}, maar {artiest}. Zappen maar!"
             wachttijd = "10"
         else:
-            tekst = f"Er speelt een vrouw op Radio {kanaal} in het programma {programma}! <p> Namelijk {artiest} met {titel}. " \
-                    f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M:%S')} en het is nu {nu().strftime('%H:%M:%S')}."
+            tekst = f"Er speelt een vrouw op Radio {kanaal}! <p> Namelijk {artiest} met {titel}. "
+                    #f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M')}."
             duur = (eindtijd_object -nu()).total_seconds()
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
             volgende_kanaal = kanaal
     else:
-        tekst = f"Het is nu {nu().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}. <br> Even wachten nog...!"
+        tekst = f"Het is nu {nu().strftime('%H:%M')} en er speelt geen liedje op Radio {kanaal}. <p> Even wachten nog...!"
         wachttijd = "30"
         volgende_kanaal = kanaal
         vrouw = None
 
-    return tekst, volgende_kanaal, wachttijd, vrouw, zap, programma
+    programma_percentage = programma_data.get(naam, 'ONBEKEND')
+    historie = f"Gemiddeld draait {naam} {programma_percentage}% vrouwen."
+
+    return tekst, historie, volgende_kanaal, wachttijd, vrouw, zap, programma
 
 zenders_slug = {
     '10': 'Radio-10',
