@@ -45,6 +45,14 @@
     }
 </script>
 
+<script>
+function zapZelf() {
+    var iframe = document.getElementById('iframe');
+    iframe.src = "https://radioplayer.nporadio.nl/mini-player/radio5/";
+}
+</script>
+
+
 <!-- Header -->
 <header>
     <div class="container">
@@ -73,8 +81,16 @@
                     allow="autoplay"
                     id="iframe"
                     title="Muziekje erbij?">
-                    </iframe>
+                    </iframe> <br><br>
+
+                <form action="/zapp_zelf/{{ kanaal }}" method="post">
+                    <br><br>
+                    Zelf zappen:
+                    <button onclick="zapZelf">💥</button>
+
+                </form>
                 <p>🕰 {{historie|safe}}</p>
+
             </div>
 
             <div class="column">
