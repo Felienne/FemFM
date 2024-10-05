@@ -3,7 +3,7 @@ from datetime import datetime
 import time
 import femfm
 def log():
-    kanaal = '2'
+    kanaal = '538'
     initiele_waarde = ('', datetime.now())
     laatste_liedje_op_kanaal = {x: initiele_waarde for x in femfm.alle_kanalen}
 

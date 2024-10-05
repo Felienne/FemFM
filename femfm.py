@@ -29,9 +29,13 @@ with open("programmas_met_percentage.csv", 'r') as w:
 
 alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
 
-def nu():
+# tijd op de server is twee uur vroeger, want het is zomertijd
+tijdverschil_utc_nederland = timedelta(hours=2)
+
+def nu_in_nederland():
     if server == 'Yes':
-        return datetime.now() + timedelta(hours=1)  # tijd op de server is een uur later
+        return datetime.now() + tijdverschil_utc_nederland
+        # tijd op de server is twee uur vroeger, want het is zomertijd
     else:
         return datetime.now()
 
@@ -67,7 +71,7 @@ def huidig_liedje_op_radio(kanaal):
         eindtijd = liedje["enddatetime"]
 
         eindtijd_object = datetime.strptime(eindtijd, '%Y-%m-%dT%H:%M:%S')
-        if eindtijd_object < nu():
+        if eindtijd_object < nu_in_nederland():
             return None
 
         return liedje["artist"], liedje["title"], starttijd, eindtijd, eindtijd_object
@@ -79,11 +83,12 @@ def huidig_liedje_op_radio(kanaal):
         artiest = liedje['track']['artistName'].title() #for some reason this API give all caps
         titel = liedje['track']['title']
 
-        starttijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%SZ')+timedelta(hours=1)
+        # Deze tijd is in UTC, wij willen tijden in NL tijd loggen
+        starttijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%SZ') + tijdverschil_utc_nederland
 
         #eindtijd wordt niet gegeven dus doe maar 3 mins erop, en ze lopen een uur achter zoals op de server (dit werkt dus waarschijnlijk online zo niet)
         eindtijd_object = starttijd_object + timedelta(minutes=3)
-        if eindtijd_object < nu():
+        if eindtijd_object < datetime.utcnow():
             return None
 
         return artiest, titel, starttijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
@@ -93,10 +98,10 @@ def huidig_liedje_op_radio(kanaal):
         titel = data['title']
         duur = data["duration"]
 
-        eindtijd_object = nu() + timedelta(seconds=duur)
-        if eindtijd_object < nu():
+        eindtijd_object = nu_in_nederland() + timedelta(seconds=duur)
+        if eindtijd_object < nu_in_nederland():
             return None
-        return artiest, titel, nu().strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
+        return artiest, titel, nu_in_nederland().strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
 
     else: # "Q"
         data = json.loads(r.content)
@@ -110,7 +115,7 @@ def huidig_liedje_op_radio(kanaal):
 
         #eindtijd wordt niet gegeven dus doe maar 3 mins erop
         eindtijd_object = starttijd_object + timedelta(minutes=3)
-        if eindtijd_object < nu():
+        if eindtijd_object < nu_in_nederland():
             return None
 
         return artiest, titel, starttijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object.strftime('%Y-%m-%dT%H:%M:%S'), eindtijd_object
@@ -156,11 +161,11 @@ def genereer_uitvoer(kanaal):
         else:
             tekst = f"Er speelt een vrouw op Radio {kanaal}! <p> Namelijk {artiest} met {titel}. "
                     #f"Dit liedje speelt nog tot {eindtijd_object.strftime('%H:%M')}."
-            duur = (eindtijd_object -nu()).total_seconds()
+            duur = (eindtijd_object - nu_in_nederland()).total_seconds()
             wachttijd = str(duur+60)  # de stream loopt een minuutje ofzo achter
             volgende_kanaal = kanaal
     else:
-        tekst = f"Het is nu {nu().strftime('%H:%M')} en er speelt geen liedje op Radio {kanaal}. <p> Even wachten nog...!"
+        tekst = f"Het is nu {nu_in_nederland().strftime('%H:%M')} en er speelt geen liedje op Radio {kanaal}. <p> Even wachten nog...!"
         wachttijd = "30"
         volgende_kanaal = kanaal
         vrouw = None
@@ -183,7 +188,7 @@ zenders_slug = {
 
 
 def huidig_programma(kanaal):
-    datum_en_tijd = nu()
+    datum_en_tijd = nu_in_nederland()
 
     datum = datum_en_tijd.strftime('%d-%m-%Y')
     tijd = datum_en_tijd.time()
