@@ -104,7 +104,9 @@ def huidig_liedje_op_radio(kanaal):
         titel = liedje['title']
         artiest = liedje['artist']['name'].title() #for some reason this API give all caps
         starttijd = liedje["played_at"]
-        starttijd_object = datetime.strptime(starttijd, '%Y-%m-%dT%H:%M:%S+01:00')
+        # De tijdzone negeren werkt omdat de zender in dezelfde tijdzone zit als wijzelf
+        kloktijd, tijdzone = starttijd.split('+')
+        starttijd_object = datetime.strptime(kloktijd, '%Y-%m-%dT%H:%M:%S')
 
         #eindtijd wordt niet gegeven dus doe maar 3 mins erop
         eindtijd_object = starttijd_object + timedelta(minutes=3)
