@@ -56,7 +56,7 @@ def huidig_liedje_op_radio(kanaal):
     elif kanaal == 'Q':
         url = "https://api.qmusic.nl/2.0/tracks/plays?limit=3&_station_id=qmusic_nl"
     elif kanaal == 'Veronica':
-        url = 'https://api.radioveronica.nl/api/nowplaying?stationKey=VERONICA'
+        url = 'https://api.radioveronica.nl/api/nowplaying?stationKey=veronica&brand=veronica'
     else:
         url = f'http://www.nporadio{kanaal}.nl/api/tracks'
 
@@ -132,7 +132,7 @@ def is_vrouw(artiest):
     elif artiest in mannen:
         return False
     else:
-        return None
+        return 'onbekend'
 
 def genereer_uitvoer(kanaal):
     vrouw = False

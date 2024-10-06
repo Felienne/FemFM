@@ -13,7 +13,7 @@ def log():
         if not os.path.isfile(bestand):
             with open(bestand, 'w', newline='') as file:
                 writer = csv.writer(file)
-                writer.writerow(["Artiest", "Titel", "Starttijd", "Eindtijd", "Vrouw?", "Kanaal"])
+                writer.writerow(["Artiest", "Titel", "Starttijd", "Eindtijd", "Vrouw?", "Kanaal", "Programma"])
 
         try:
             laatste_liedje, eindtijd = laatste_liedje_op_kanaal[kanaal]
@@ -22,12 +22,17 @@ def log():
                 if x := femfm.huidig_liedje_op_radio(kanaal):
                     artiest, titel, starttijd, eindtijd, eindtijd_object = x
                     vrouw = femfm.is_vrouw(artiest)
+                    programma = femfm.huidig_programma(kanaal)
+                    if len(programma) > 1:
+                        # c'est une tuple!
+                        programma = programma[0]
+
                     if not laatste_liedje == titel:
                         with open(bestand, 'a', newline='') as file:
                             writer = csv.writer(file)
-                            writer.writerow([artiest, titel, starttijd, eindtijd, vrouw, kanaal])
+                            writer.writerow([artiest, titel, starttijd, eindtijd, vrouw, kanaal, programma])
 
-                        print("Logging ", artiest, titel, starttijd, vrouw, kanaal)
+                        print("Logging ", artiest, titel, starttijd, vrouw, kanaal, programma)
                         laatste_liedje_op_kanaal[kanaal] = titel, eindtijd_object
                 else:
                     print(f"Het is nu {datetime.now().strftime('%H:%M:%S')} en er speelt geen liedje op Radio {kanaal}")
