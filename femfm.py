@@ -29,8 +29,8 @@ with open("programmas_met_percentage.csv", 'r') as w:
 
 alle_kanalen = ['2', '3', '5', '538', 'Q', 'Sky', '10', 'Veronica']
 
-# tijd op de server is twee uur vroeger, want het is zomertijd
-tijdverschil_utc_nederland = timedelta(hours=2)
+# tijd op de server is een uur vroeger, want het is nu wintertijd
+tijdverschil_utc_nederland = timedelta(hours=1)
 
 def nu_in_nederland():
     if server == 'Yes':
