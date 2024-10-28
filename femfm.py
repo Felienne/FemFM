@@ -35,7 +35,7 @@ tijdverschil_utc_nederland = timedelta(hours=1)
 def nu_in_nederland():
     if server == 'Yes':
         return datetime.now() + tijdverschil_utc_nederland
-        # tijd op de server is twee uur vroeger, want het is zomertijd
+        # tijd op de server is een uur vroeger, want het is wintertijd
     else:
         return datetime.now()
 
